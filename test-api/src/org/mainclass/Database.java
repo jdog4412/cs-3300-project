@@ -1,18 +1,92 @@
 package org.mainclass;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class Database {
-    public static void testDatabase() {
-        try (Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/cs_3300_project", "postgres", "password")) {
-            System.out.println("Java JDBC Example");
+    private final String dbName = "jdbc:postgresql://localhost:5432/cs_3300_project";
+    private final String dbUsername = "postgres";
+    private final String dbPassword = "password";
 
-            System.out.println("Connected to PostgreSQL Database!");
+    private Connection connect() throws SQLException {
+        return DriverManager.getConnection(dbName, dbUsername, dbPassword);
+    }
+
+    public String getUsernameAndPassword() {
+        String SQL = "SELECT username, password FROM public.user";
+        String user = "";
+        String username = "";
+        String password = "";
+
+
+
+        try (Connection conn = connect()) {
+            Statement stmt = conn.createStatement();
+            ResultSet rs = stmt.executeQuery(SQL);
+            while (rs.next()) {
+                username = rs.getString("username");
+                password = rs.getString("password");
+            }
         } catch (SQLException e) {
-            System.out.println("Connection failure.");
+            e.getMessage();
             e.printStackTrace();
         }
+        user = username + password;
+        return user;
+    }
+
+    //    public String getPassword() {
+//
+//    }
+//
+    public void setUserNameAndPassword(String username, String password) {
+        String SQL = "INSERT INTO public.user(username, password) "
+                + "VALUES(?, ?)";
+
+        try (Connection conn = connect()) {
+            PreparedStatement psmt = conn.prepareStatement(SQL, Statement.RETURN_GENERATED_KEYS);
+            psmt.setString(1, username);
+            psmt.setString(2, password);
+            psmt.executeUpdate();
+        } catch (SQLException e) {
+            e.getMessage();
+            e.printStackTrace();
+        }
+
+    }
+
+    public void deleteUserNameAndPassword(String username, String password) {
+        String SQL = "DELETE FROM public.user WHERE username = ? AND password = ?";
+
+        try (Connection conn = connect()) {
+            PreparedStatement pstmt = conn.prepareStatement(SQL);
+            pstmt.setString(1, username);
+            pstmt.setString(2, password);
+
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            e.getMessage();
+            e.printStackTrace();
+        }
+    }
+    public boolean checkUsernameAndPassword(String username, String password) {
+        String SQL = "SELECT username, password FROM public.user where password = ?";
+        boolean check = false;
+
+        try (Connection conn = connect()) {
+            PreparedStatement pstmt = conn.prepareStatement(SQL);
+            pstmt.setString(1, password);
+            ResultSet rs = pstmt.executeQuery();
+
+            while (rs.next()) {
+                if (rs.getString("username").equals(username)) {
+                    check = true;
+                }
+            }
+
+        } catch (SQLException e) {
+            e.getMessage();
+            e.printStackTrace();
+        }
+        return check;
     }
 }
