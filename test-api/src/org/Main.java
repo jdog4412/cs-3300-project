@@ -13,8 +13,8 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) {
-        LoginController login = new LoginController(stage, "..\\fxmls\\login.fxml");
-        Scene scene = new Scene( login, 800, 400);
+        LoginController login = new LoginController(stage, "../fxmls/login.fxml");
+        Scene scene = new Scene( login);
 
         stage.setTitle("Clyde's Pickup - Login");
 

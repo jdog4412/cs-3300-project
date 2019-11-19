@@ -3,9 +3,9 @@ package org.utils;
 import java.sql.*;
 
 public class Database {
-    private final String dbName = "jdbc:postgresql://localhost:5432/cs_3300_project";
-    private final String dbUsername = "postgres";
-    private final String dbPassword = "password";
+    private final String dbName = "jdbc:postgresql://cs3300.cuv9gmqa1npq.us-east-2.rds.amazonaws.com:5432/cs_3300_project";
+    private final String dbUsername = "group8";
+    private final String dbPassword = "GroupE!ghtFinalProject";
 
     private Connection connect() throws SQLException {
         return DriverManager.getConnection(dbName, dbUsername, dbPassword);

@@ -34,7 +34,7 @@ public class LoginController extends AnchorPane {
             login = db.checkUsernameAndPassword(username, password);
 
             if (login) {
-                //SceneController.switchScenes(stage, "fxmls\\mainMenu.fxml");
+                SceneController.switchScenes(stage, "../fxmls/mainMenu.fxml");
             } else {
                 invalidLogin();
             }
@@ -43,13 +43,13 @@ public class LoginController extends AnchorPane {
 
     @FXML
     private void signup(ActionEvent event) {
-        //SceneController.switchScenes(stage, "fxmls\\signup.fxml");
+        SceneController.switchScenes(stage, "../fxmls/signup.fxml");
     }
 
     private void invalidLogin() {
         Stage error = new Stage();
         error.setTitle("Invalid Login");
-        ErrorController controller = new ErrorController("..\\fxmls\\invalidLogin.fxml");
+        ErrorController controller = new ErrorController("../fxmls/invalidLogin.fxml");
         error.setScene(new Scene(controller));
         error.show();
     }
