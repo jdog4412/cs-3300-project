@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<fx:root type="javafx.scene.layout.AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="37.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*First Name :" wrappingWidth="192.22900390625" />
+      <Text layoutX="37.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Last Name :" wrappingWidth="175.22900390625" />
+      <TextField layoutX="246.0" layoutY="88.0" prefHeight="17.0" prefWidth="220.0" />
+      <TextField layoutX="246.0" layoutY="123.0" prefHeight="27.0" prefWidth="220.0" />
+      <Text layoutX="35.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Email Address : " wrappingWidth="161.22900390625" />
+      <TextField layoutX="246.0" layoutY="159.0" prefHeight="27.0" prefWidth="220.0" />
+      <Text layoutX="32.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Confirmation Email Address :" wrappingWidth="167.22900390625" />
+      <TextField layoutX="246.0" layoutY="196.0" prefHeight="27.0" prefWidth="220.0" />
+      <Text layoutX="32.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Primary Phone Number :" wrappingWidth="167.22900390625" />
+      <TextField layoutX="246.0" layoutY="232.0" prefHeight="27.0" prefWidth="220.0" />
+      <Text layoutX="35.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Password : " wrappingWidth="161.22900390625" />
+      <TextField layoutX="246.0" layoutY="267.0" prefHeight="27.0" prefWidth="220.0" />
+      <Text layoutX="35.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Confirm Password :" wrappingWidth="161.22900390625" />
+      <TextField layoutX="246.0" layoutY="303.0" prefHeight="27.0" prefWidth="220.0" />
+      <Button layoutX="219.0" layoutY="359.0" mnemonicParsing="false" text="CREATE YOUR PROFILE" textAlignment="CENTER">
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#543939" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <Text fill="#f22901" layoutX="246.0" layoutY="343.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password must be at least 8 characters" wrappingWidth="220.0">
+         <font>
+            <Font name="Arial Italic" size="10.0" />
+         </font>
+      </Text>
+      <Label layoutX="38.0" layoutY="14.0" prefHeight="58.0" prefWidth="547.0" text="CLYDE'S GASTROPUB SIGN UP" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</fx:root>
