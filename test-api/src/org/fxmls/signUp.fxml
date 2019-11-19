@@ -35,11 +35,6 @@
             </RadialGradient>
          </textFill>
       </Button>
-      <Text fill="#f22901" layoutX="246.0" layoutY="343.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password must be at least 8 characters" wrappingWidth="220.0">
-         <font>
-            <Font name="Arial Italic" size="10.0" />
-         </font>
-      </Text>
       <Label layoutX="38.0" layoutY="14.0" prefHeight="58.0" prefWidth="547.0" text="CLYDE'S GASTROPUB SIGN UP" textAlignment="CENTER">
          <font>
             <Font name="System Bold Italic" size="36.0" />
