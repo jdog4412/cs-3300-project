@@ -4,13 +4,13 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import org.User;
 import org.utils.Database;
 import org.utils.Utils;
 
 
-public class LoginController extends AnchorPane {
+public class LoginController extends AbstractController {
 
     private Stage stage;
     private Database db = new Database();
@@ -34,7 +34,8 @@ public class LoginController extends AnchorPane {
             login = db.checkUsernameAndPassword(username, password);
 
             if (login) {
-                SceneController.switchScenes(stage, "../fxmls/mainMenu.fxml");
+                User user = new User(username);
+                SceneController.switchScenes(stage, "../fxmls/mainMenu.fxml", user);
             } else {
                 invalidLogin();
             }
@@ -43,10 +44,12 @@ public class LoginController extends AnchorPane {
 
     @FXML
     private void signup(ActionEvent event) {
-        SceneController.switchScenes(stage, "../fxmls/signup.fxml");
+        SceneController.switchScenes(stage, "../fxmls/signUp.fxml", null);
     }
 
     private void invalidLogin() {
+        usernameField.clear();
+        passwordField.clear();
         Stage error = new Stage();
         error.setTitle("Invalid Login");
         ErrorController controller = new ErrorController("../fxmls/invalidLogin.fxml");
