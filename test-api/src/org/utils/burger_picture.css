@@ -1,0 +1,6 @@
+.anchor {
+    -fx-background-image:url('file:/Users/miminamsinh/IdeaProjects/cs-3300-project/test-api/burger.png');
+    -fx-background-repeat: stretch;
+    -fx-background-size: 750 400;
+    -fx-background-position: center center;
+}

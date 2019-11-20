@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--<fx:root prefHeight="400.0" prefWidth="600.0" type="javafx.scene.layout.AnchorPane" styleClass="anchor" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">-->
+
+<?import java.net.URL?>
+
+<fx:root prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black; -fx-border-color: white;" styleClass="anchor" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <stylesheets>
+      <URL value="@../utils/burger_picture.css" />
+   </stylesheets>
+
+   <children>
+      <Button layoutX="44.0" layoutY="28.0" mnemonicParsing="false" text="My Account">
+         <font>
+            <Font name="American Typewriter" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="482.0" layoutY="28.0" mnemonicParsing="false" text="My Cart" textAlignment="RIGHT">
+         <font>
+            <Font name="American Typewriter" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="71.0" layoutY="109.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="132.0" style="-fx-background-color: black;" text="Burgers" textFill="#f8f5f5">
+         <font>
+            <Font name="American Typewriter" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="385.0" layoutY="242.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="132.0" style="-fx-background-color: black;" text="Fries &amp; Sides" textFill="#f8f6f6">
+         <font>
+            <Font name="American Typewriter" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="234.0" layoutY="242.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="132.0" style="-fx-background-color: black;" text="Beer" textFill="#fcf8f8">
+         <font>
+            <Font name="American Typewriter" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="224.0" layoutY="109.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="132.0" style="-fx-background-color: black;" text="Sandwiches" textFill="#f5f5f5">
+         <font>
+            <Font name="American Typewriter" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="385.0" layoutY="109.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="132.0" style="-fx-background-color: black;" text="Salads" textFill="#fcf9f9">
+         <font>
+            <Font name="American Typewriter" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="71.0" layoutY="242.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="132.0" style="-fx-background-color: black;" text="Drinks" textFill="#f8f6f6">
+         <font>
+            <Font name="American Typewriter" size="13.0" />
+         </font>
+      </Button>
+      <Text fill="#fffefe" layoutX="175.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CLYDE'S PUB" textAlignment="CENTER" wrappingWidth="275.22900390625">
+         <font>
+            <Font name="American Typewriter" size="36.0" />
+         </font>
+      </Text>
+   </children>
+</fx:root>
