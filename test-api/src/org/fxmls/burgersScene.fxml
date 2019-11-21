@@ -21,47 +21,55 @@
             <Image url="@../../../../../Clyde's%20Gastropub.jpg" />
          </image>
       </ImageView>
-      <Text fill="#837309" layoutX="198.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BURGERS" wrappingWidth="306.22900390625">
+      <Text fill="#9e9426" layoutX="184.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BURGERS" wrappingWidth="306.22900390625">
          <font>
-            <Font name="Arial Bold" size="28.0" />
+            <Font name="American Typewriter Bold" size="28.0" />
          </font>
       </Text>
-      <Text fill="#fcfafa" layoutX="219.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Served on a local Harvest Moon challah bun. (GF) Gluten-free buns and bread available. (V) Substitude any burger patty for black bean patty at no extra charge." wrappingWidth="306.22900390625">
+      <Text fill="#fcfafa" layoutX="205.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Served on a local Harvest Moon challah bun. (GF) Gluten-free buns and bread available. (V) Substitude any burger patty for black bean patty at no extra charge." wrappingWidth="306.22900390625">
          <font>
             <Font name="Apple Braille" size="12.0" />
          </font>
       </Text>
-      <Text fill="#9e9426" layoutX="224.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clyde's Original" wrappingWidth="297.0">
+      <Text fill="#9e9426" layoutX="205.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clyde's Original" wrappingWidth="297.0">
          <font>
             <Font name="Apple Chancery" size="18.0" />
          </font>
       </Text>
-      <Text fill="#fffafa" layoutX="247.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Angus beef patty, lettuce, tomato, red onion, and pickle on challah bun" wrappingWidth="266.22900390625" />
-      <Text fill="#fcfcfc" layoutX="562.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7.5" wrappingWidth="18.966796875" />
-      <Text fill="WHITE" layoutX="262.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add cheddar, Swiss, pepper jack" />
-      <Text fill="#fcfcfc" layoutX="562.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.5" />
-      <Text fill="#9a8415" layoutX="225.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A.B.C">
+      <Text fill="#fffafa" layoutX="225.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Angus beef patty, lettuce, tomato, red onion, and pickle on challah bun" wrappingWidth="266.22900390625" />
+      <Text fill="#fcfcfc" layoutX="529.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$7.50" wrappingWidth="33.966796875" />
+      <Text fill="#9a8415" layoutX="205.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A.B.C">
          <font>
             <Font name="Apple Chancery" size="18.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="247.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Angus beef patty, hickory bacon, cheddar cheese, lettuce , tomato, red onion, and pickle on challah bun." wrappingWidth="273.22900390625" />
-      <Text fill="#fffefe" layoutX="562.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9.0" />
-      <Text fill="#9e9623" layoutX="225.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mushroom Avocado Swiss Burger" wrappingWidth="266.22900390625">
+      <Text fill="WHITE" layoutX="221.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Angus beef patty, hickory bacon, cheddar cheese, lettuce , tomato, red onion, and pickle on challah bun." wrappingWidth="273.22900390625" />
+      <Text fill="#fffefe" layoutX="528.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$9.00" />
+      <Text fill="#9e9623" layoutX="204.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mushroom Avocado Swiss Burger" wrappingWidth="266.22900390625">
          <font>
             <Font name="Apple Chancery" size="18.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="247.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Angus beef patty, sauteed crimini mushrooms, avocado, lettuce, tomato, red onion and pickle." wrappingWidth="273.22900390625" />
-      <Text fill="WHITE" layoutX="562.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9.0" />
-      <Text fill="#9e9629" layoutX="225.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Black Bean Burger (V)">
+      <Text fill="WHITE" layoutX="221.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Angus beef patty, sauteed crimini mushrooms, avocado, lettuce, tomato, red onion and pickle." wrappingWidth="273.22900390625" />
+      <Text fill="WHITE" layoutX="528.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$9.00" />
+      <Text fill="#9e9629" layoutX="204.0" layoutY="342.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Black Bean Burger (V)">
          <font>
             <Font name="Apple Chancery" size="18.0" />
          </font>
       </Text>
-      <Text fill="#fcf7f7" layoutX="247.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="House-made patty, lettuce, tomato, red onion, pickle with tabasco aioli." wrappingWidth="273.22900390625" />
-      <Text fill="WHITE" layoutX="562.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8.0" />
-      <Button layoutX="72.0" layoutY="16.0" mnemonicParsing="false" text="My Account" />
-      <Button layoutX="491.0" layoutY="16.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="95.0" text="My cart" />
+      <Text fill="#fcf7f7" layoutX="227.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="House-made patty, lettuce, tomato, red onion, pickle with tabasco aioli." wrappingWidth="273.22900390625" />
+      <Text fill="WHITE" layoutX="528.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$8.00" />
+      <Button layoutX="72.0" layoutY="16.0" mnemonicParsing="false" style="-fx-background-color: #9e9426;" text="My Account" textFill="WHITE">
+         <font>
+            <Font name="American Typewriter" size="13.0" />
+         </font></Button>
+      <Button layoutX="491.0" layoutY="16.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="95.0" style="-fx-background-color: #9e9426;" text="My Cart" textFill="WHITE">
+         <font>
+            <Font name="American Typewriter" size="13.0" />
+         </font></Button>
+      <Button layoutX="497.0" layoutY="143.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="84.0" text="Add To Cart" />
+      <Button layoutX="497.0" layoutY="226.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="84.0" text="Add To Cart" />
+      <Button layoutX="497.0" layoutY="302.0" mnemonicParsing="false" text="Add To Cart" />
+      <Button layoutX="497.0" layoutY="371.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="84.0" text="Add To Cart" />
    </children>
 </fx:root>
