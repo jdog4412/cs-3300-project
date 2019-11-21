@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<fx:root prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black; -fx-border-color: white;" styleClass="anchor" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+
+   <stylesheets>
+      <URL value="@../utils/burger_picture.css" />
+   </stylesheets>
+
+   <children>
+      <Text fill="#fffafa" layoutX="253.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Cart">
+         <font>
+            <Font name="American Typewriter" size="24.0" />
+         </font>
+      </Text>
+      <Button layoutX="47.0" layoutY="30.0" mnemonicParsing="false" text="My Account">
+         <font>
+            <Font name="American Typewriter" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="461.0" layoutY="31.0" mnemonicParsing="false" text="Main Menu">
+         <font>
+            <Font name="American Typewriter" size="13.0" />
+         </font>
+      </Button>
+      <Label text="Label" />
+      <Label layoutX="392.0" layoutY="339.0" prefHeight="18.0" prefWidth="46.0" text="Total" textFill="#fcf9f9">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <ListView layoutX="94.0" layoutY="98.0" prefHeight="205.0" prefWidth="424.0" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <TextField layoutX="438.0" layoutY="335.0" prefHeight="27.0" prefWidth="78.0" text="\$0.00" />
+   </children>
+</fx:root>
