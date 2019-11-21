@@ -1,6 +1,11 @@
 .anchor {
-    -fx-background-image:url('file:/Users/miminamsinh/IdeaProjects/cs-3300-project/test-api/burger.png');
+    -fx-background-image:url('../utils/burger.png');
     -fx-background-repeat: stretch;
     -fx-background-size: 750 400;
     -fx-background-position: center center;
+}
+
+.pane {
+    -fx-background-color: 'black';
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
 }

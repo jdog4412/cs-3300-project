@@ -10,7 +10,7 @@ public class User {
     private String firstName;
     private String lastName;
     private String email;
-    private String address;
+    private String phoneNumber;
     private String card;
     private Database db = new Database();
 
@@ -18,7 +18,7 @@ public class User {
         this.firstName = db.getFirstName(username);
         this.lastName = db.getLastName(username);
         this.email = db.getEmail(username);
-        this.address = db.getAddress(username);
+        this.phoneNumber = db.getPhoneNumber(username);
         this.card = db.getCard(username);
         this.cart = new HashMap<>();
     }

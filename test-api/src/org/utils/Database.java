@@ -11,8 +11,8 @@ public class Database {
         return DriverManager.getConnection(dbName, dbUsername, dbPassword);
     }
 
-    public void setUser(String username, String password, String firstName, String lastName, String email, String address, String card) {
-        String SQL = "INSERT INTO public.user(username, password, first_name, last_name, email, address, card) " +
+    public void setUser(String username, String password, String firstName, String lastName, String email, String card, String phoneNumber) {
+        String SQL = "INSERT INTO public.user(username, password, first_name, last_name, email, card, phone_number) " +
                 "VALUES(?, ?, ?, ?, ?, ?, ?)";
         try (Connection conn = connect()) {
             PreparedStatement pstmt = conn.prepareStatement(SQL, Statement.RETURN_GENERATED_KEYS);
@@ -21,8 +21,8 @@ public class Database {
             pstmt.setString(3, firstName);
             pstmt.setString(4, lastName);
             pstmt.setString(5, email);
-            pstmt.setString(6, address);
-            pstmt.setString(7, card);
+            pstmt.setString(6, card);
+            pstmt.setString(7, phoneNumber);
             pstmt.executeUpdate();
         } catch (SQLException e) {
             e.getMessage();
@@ -106,8 +106,8 @@ public class Database {
         return email;
     }
 
-    public String getAddress(String username) {
-        String SQL = "SELECT address FROM public.user WHERE username = ?";
+    public String getPhoneNumber(String username) {
+        String SQL = "SELECT phone_number FROM public.user WHERE username = ?";
         String address = "";
 
         try (Connection conn = connect()) {
@@ -115,7 +115,7 @@ public class Database {
             pstmt.setString(1, username);
             ResultSet rs = pstmt.executeQuery();
             while (rs.next()) {
-                address = rs.getString("address");
+                address = rs.getString("phone_number");
             }
         } catch (SQLException e) {
             e.getMessage();
