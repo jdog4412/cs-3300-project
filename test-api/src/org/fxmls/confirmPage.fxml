@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<fx:root type="javafx.scene.layout.AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane layoutX="151.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="586.0" style="-fx-background-color: white;">
+               <children>
+                  <ImageView fitHeight="192.0" fitWidth="206.0" layoutX="406.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="406.0" AnchorPane.topAnchor="-5.0">
+                     <image>
+                        <Image url="@../../../../../Clyde's%20Gastropub.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="39.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ORDER CONFIRMED " wrappingWidth="338.22900390625">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="46.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pick Up Time Estimation: " wrappingWidth="355.22900390625">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="46.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="#" wrappingWidth="152.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="41.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dear Customer, " wrappingWidth="313.22900390625">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="42.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="We hereby confirmed that we have received your order. Your order will be ready for pick up  soon. You can check the order details in your email." wrappingWidth="514.22900390625">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</fx:root>
