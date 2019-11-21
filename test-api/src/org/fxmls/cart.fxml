@@ -21,23 +21,21 @@
             <Font name="American Typewriter" size="24.0" />
          </font>
       </Text>
-      <Button layoutX="47.0" layoutY="30.0" mnemonicParsing="false" text="My Account">
+      <Button layoutX="76.0" layoutY="31.0" mnemonicParsing="false" style="-fx-background-color: #9e9426;" text="My Account" textFill="#fcf8f8">
          <font>
             <Font name="American Typewriter" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="461.0" layoutY="31.0" mnemonicParsing="false" text="Main Menu">
+      <Button layoutX="433.0" layoutY="31.0" mnemonicParsing="false" style="-fx-background-color: #9e9426;" text="Main Menu" textFill="#fcfafa">
          <font>
             <Font name="American Typewriter" size="13.0" />
          </font>
       </Button>
-      <Label text="Label" />
       <Label layoutX="392.0" layoutY="339.0" prefHeight="18.0" prefWidth="46.0" text="Total" textFill="#fcf9f9">
          <font>
             <Font name="System Bold" size="14.0" />
          </font></Label>
       <ListView layoutX="94.0" layoutY="98.0" prefHeight="205.0" prefWidth="424.0" />
-      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
       <TextField layoutX="438.0" layoutY="335.0" prefHeight="27.0" prefWidth="78.0" text="\$0.00" />
    </children>
 </fx:root>
