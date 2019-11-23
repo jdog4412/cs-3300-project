@@ -7,7 +7,6 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <fx:root prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black; -fx-border-color: white;" styleClass="anchor" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Button layoutX="39.0" layoutY="31.0" mnemonicParsing="false" style="-fx-background-color: #9e9624;" text="My Account " textFill="WHITE">
@@ -37,7 +36,7 @@
             <Font name="Apple Chancery" size="24.0" />
          </font>
       </Text>
-      <Text fill="#a18822" layoutX="102.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Soda" wrappingWidth="97.0">
+      <Text fill="#a18822" layoutX="102.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Soda" wrappingWidth="97.0">
          <font>
             <Font name="Apple Chancery" size="24.0" />
          </font>
