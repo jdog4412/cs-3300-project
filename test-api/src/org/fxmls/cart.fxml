@@ -31,11 +31,16 @@
             <Font name="American Typewriter" size="13.0" />
          </font>
       </Button>
-      <Label layoutX="392.0" layoutY="339.0" prefHeight="18.0" prefWidth="46.0" text="Total" textFill="#fcf9f9">
+      <Label layoutX="387.0" layoutY="301.0" prefHeight="18.0" prefWidth="46.0" text="Total" textFill="#141313">
          <font>
             <Font name="System Bold" size="14.0" />
          </font></Label>
-      <ListView layoutX="94.0" layoutY="98.0" prefHeight="205.0" prefWidth="424.0" />
-      <TextField layoutX="438.0" layoutY="335.0" prefHeight="27.0" prefWidth="78.0" text="\$0.00" />
+      <ListView layoutX="92.0" layoutY="76.0" prefHeight="205.0" prefWidth="424.0" />
+      <TextField layoutX="439.0" layoutY="296.0" prefHeight="27.0" prefWidth="78.0" text="\$0.00" />
+      <Button layoutX="366.0" layoutY="338.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="153.0" style="-fx-background-color: #9e9426;" text="Proceed to checkout" textFill="#fcf8f8">
+         <font>
+            <Font name="American Typewriter" size="13.0" />
+         </font>
+      </Button>
    </children>
 </fx:root>
