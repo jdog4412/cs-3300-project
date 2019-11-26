@@ -10,64 +10,53 @@
 <?import javafx.scene.layout.*?>
 <?import java.net.URL?>
 
-<fx:root prefHeight="400.0" prefWidth="600.0" styleClass="anchor" type="javafx.scene.layout.AnchorPane"
-         xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root prefHeight="400.0" prefWidth="600.0" styleClass="anchor" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
     <stylesheets>
-        <URL value="@../utils/burger_picture.css"/>
+        <URL value="@../utils/burger_picture.css" />
     </stylesheets>
     <children>
         <Pane layoutX="16.0" layoutY="19.0" prefHeight="363.0" prefWidth="570.0" styleClass="pane">
             <children>
-                <Button layoutX="41.0" layoutY="336.0" mnemonicParsing="false" onAction="#cancel" text="Cancel"
-                        textAlignment="CENTER">
+                <Button layoutX="41.0" layoutY="336.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" textAlignment="CENTER">
                     <textFill>
                         <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
                             <stops>
-                                <Stop color="BLACK"/>
-                                <Stop color="#543939" offset="1.0"/>
+                                <Stop color="BLACK" />
+                                <Stop color="#543939" offset="1.0" />
                             </stops>
                         </RadialGradient>
                     </textFill>
                 </Button>
-                <Text fill="WHITE" layoutX="37.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0"
-                      text="*First Name :" wrappingWidth="192.22900390625"/>
-                <Text fill="WHITE" layoutX="37.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0"
-                      text="*Last Name :" wrappingWidth="175.22900390625"/>
-                <TextField fx:id="firstNameField" layoutX="246.0" layoutY="88.0" prefHeight="17.0" prefWidth="220.0"/>
-                <TextField fx:id="lastNameField" layoutX="246.0" layoutY="123.0" prefHeight="27.0" prefWidth="220.0"/>
-                <Text fill="WHITE" layoutX="35.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0"
-                      text="*Email Address : " wrappingWidth="161.22900390625"/>
-                <TextField fx:id="emailField" layoutX="246.0" layoutY="159.0" prefHeight="27.0" prefWidth="220.0"/>
-                <Text fill="WHITE" layoutX="32.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0"
-                      text="*Username" wrappingWidth="167.22900390625"/>
-                <TextField fx:id="usernameField" layoutX="246.0" layoutY="196.0" prefHeight="27.0" prefWidth="220.0"/>
-                <Text fill="WHITE" layoutX="32.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0"
-                      text="*Phone Number :" wrappingWidth="167.22900390625"/>
-                <TextField fx:id="phoneNumberField" layoutX="246.0" layoutY="232.0" prefHeight="27.0"
-                           prefWidth="220.0"/>
-                <Text fill="WHITE" layoutX="35.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0"
-                      text="*Password : " wrappingWidth="161.22900390625"/>
-                <PasswordField fx:id="passwordField" layoutX="246.0" layoutY="267.0" prefHeight="27.0"
-                               prefWidth="220.0"/>
-                <Text fill="WHITE" layoutX="35.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0"
-                      text="*Confirm Password :" wrappingWidth="161.22900390625"/>
-                <PasswordField fx:id="confirmPasswordField" layoutX="246.0" layoutY="303.0" prefHeight="27.0"
-                               prefWidth="220.0"/>
-                <Button layoutX="326.0" layoutY="336.0" mnemonicParsing="false" onAction="#signup"
-                        text="CREATE YOUR PROFILE" textAlignment="CENTER">
+                <Text fill="WHITE" layoutX="37.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*First Name :" wrappingWidth="192.22900390625" />
+                <Text fill="WHITE" layoutX="37.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Last Name :" wrappingWidth="175.22900390625" />
+                <TextField fx:id="firstNameField" layoutX="246.0" layoutY="88.0" prefHeight="17.0" prefWidth="220.0" />
+                <TextField fx:id="lastNameField" layoutX="246.0" layoutY="123.0" prefHeight="27.0" prefWidth="220.0" />
+                <Text fill="WHITE" layoutX="35.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Email Address : " wrappingWidth="161.22900390625" />
+                <TextField fx:id="emailField" layoutX="246.0" layoutY="159.0" prefHeight="27.0" prefWidth="220.0" />
+                <Text fill="WHITE" layoutX="32.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Username" wrappingWidth="167.22900390625" />
+                <TextField fx:id="usernameField" layoutX="246.0" layoutY="196.0" prefHeight="27.0" prefWidth="220.0" />
+                <Text fill="WHITE" layoutX="32.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Phone Number :" wrappingWidth="167.22900390625" />
+                <TextField fx:id="phoneNumberField" layoutX="246.0" layoutY="232.0" prefHeight="27.0" prefWidth="220.0" />
+                <Text fill="WHITE" layoutX="35.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Password : " wrappingWidth="161.22900390625" />
+                <PasswordField fx:id="passwordField" layoutX="246.0" layoutY="267.0" prefHeight="27.0" prefWidth="220.0" />
+                <Text fill="WHITE" layoutX="35.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Confirm Password :" wrappingWidth="161.22900390625" />
+                <PasswordField fx:id="confirmPasswordField" layoutX="246.0" layoutY="303.0" prefHeight="27.0" prefWidth="220.0" />
+                <Button layoutX="326.0" layoutY="336.0" mnemonicParsing="false" onAction="#signup" text="CREATE YOUR PROFILE" textAlignment="CENTER">
                     <textFill>
                         <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
                             <stops>
-                                <Stop color="BLACK"/>
-                                <Stop color="#543939" offset="1.0"/>
+                                <Stop color="BLACK" />
+                                <Stop color="#543939" offset="1.0" />
                             </stops>
                         </RadialGradient>
                     </textFill>
+               <font>
+                  <Font size="12.0" />
+               </font>
                 </Button>
-                <Label layoutX="38.0" layoutY="14.0" prefHeight="58.0" prefWidth="547.0"
-                       text="CLYDE'S GASTROPUB SIGN UP" textAlignment="CENTER">
+                <Label layoutX="38.0" layoutY="14.0" prefHeight="58.0" prefWidth="547.0" text="CLYDE'S GASTROPUB SIGN UP" textAlignment="CENTER">
                     <font>
-                        <Font name="System Bold Italic" size="36.0"/>
+                        <Font name="System Bold Italic" size="36.0" />
                     </font>
                 </Label>
             </children>
