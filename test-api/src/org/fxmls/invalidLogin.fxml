@@ -7,8 +7,8 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<fx:root prefHeight="400.0" prefWidth="600.0" type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root prefHeight="253.0" prefWidth="443.0" type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Text layoutX="80.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Username and Password you just entered is incorrect. Please try again" textAlignment="CENTER" wrappingWidth="477.82421875" />
+      <Text layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Username and Password you just entered is incorrect. Please try again" textAlignment="CENTER" wrappingWidth="443.0" />
    </children>
 </fx:root>

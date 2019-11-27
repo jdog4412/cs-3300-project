@@ -24,13 +24,17 @@ public class SignUpController extends AbstractController {
 
     @FXML
     private void signup(ActionEvent event) {
-        if (passwordField.getText().equals(confirmPasswordField.getText())) {
-            db.setUser(usernameField.getText(), passwordField.getText(), firstNameField.getText(),
-                    lastNameField.getText(), emailField.getText(), " ", phoneNumberField.getText());
-            User user = new User(usernameField.getText());
-            SceneController.switchScenes(stage, "../fxmls/mainMenu.fxml", user);
+        if (!areFieldsEmpty()) {
+            if (passwordField.getText().equals(confirmPasswordField.getText())) {
+                db.setUser(usernameField.getText(), passwordField.getText(), firstNameField.getText(),
+                        lastNameField.getText(), emailField.getText(), " ", phoneNumberField.getText());
+                User user = new User(usernameField.getText());
+                SceneController.switchScenes(stage, "../fxmls/mainMenu.fxml", user);
+            } else {
+                passwordsDontMatch();
+            }
         } else {
-            passwordsDontMatch();
+            emptyFields();
         }
     }
 
@@ -39,6 +43,13 @@ public class SignUpController extends AbstractController {
         SceneController.switchScenes(stage, "../fxmls/login.fxml", null);
     }
 
+    private void emptyFields() {
+        Stage error = new Stage();
+        error.setTitle("Fields are empty");
+        ErrorController controller = new ErrorController("../fxmls/emptyFields.fxml");
+        error.setScene(new Scene(controller));
+        error.show();
+    }
 
     private void passwordsDontMatch() {
         Stage error = new Stage();
@@ -48,5 +59,10 @@ public class SignUpController extends AbstractController {
         error.show();
     }
 
+    private boolean areFieldsEmpty() {
+        return firstNameField.getText().isEmpty() || lastNameField.getText().isEmpty() ||
+                emailField.getText().isEmpty() || phoneNumberField.getText().isEmpty() || usernameField.getText().isEmpty() ||
+                passwordField.getText().isEmpty() || confirmPasswordField.getText().isEmpty();
+    }
 
 }

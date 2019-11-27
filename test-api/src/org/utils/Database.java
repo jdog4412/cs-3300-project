@@ -1,6 +1,8 @@
 package org.utils;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Database {
     private final String dbName = "jdbc:postgresql://cs3300.cuv9gmqa1npq.us-east-2.rds.amazonaws.com:5432/cs_3300_project";
@@ -140,5 +142,45 @@ public class Database {
             e.printStackTrace();
         }
         return card;
+    }
+
+    public boolean checkInventory(String item) {
+        String SQL = "SELECT count FROM public.inventory WHERE item = ?";
+        boolean inStock = false;
+
+        try (Connection conn = connect()) {
+            PreparedStatement pstmt = conn.prepareStatement(SQL);
+            pstmt.setString(1, item);
+            ResultSet rs = pstmt.executeQuery();
+            while (rs.next()) {
+                int count = rs.getInt("count");
+                if (count > 0) {
+                    inStock = true;
+                }
+            }
+        } catch (SQLException e) {
+            e.getMessage();
+            e.printStackTrace();
+        }
+        return inStock;
+    }
+
+    public List<String> getItem(String item) {
+        String SQL = "SELECT item, value FROM public.inventory WHERE item = ?";
+        List<String> items = new ArrayList<>();
+
+        try (Connection conn = connect()) {
+            PreparedStatement pstmt = conn.prepareStatement(SQL);
+            pstmt.setString(1, item);
+            ResultSet rs = pstmt.executeQuery();
+            while (rs.next()) {
+                items.add(rs.getString("item"));
+                items.add(rs.getString("value"));
+            }
+        } catch (SQLException e) {
+            e.getMessage();
+            e.printStackTrace();
+        }
+        return items;
     }
 }

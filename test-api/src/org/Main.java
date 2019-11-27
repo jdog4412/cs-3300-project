@@ -20,7 +20,7 @@ public class Main extends Application {
         LoginController login = new LoginController(stage, SceneController.LOGIN);
         Scene scene = new Scene(login);
 
-        stage.setTitle("Clyde's Pickup - Login");
+        stage.setTitle("Clyde's Pickup");
 
         stage.setScene(scene);
 
