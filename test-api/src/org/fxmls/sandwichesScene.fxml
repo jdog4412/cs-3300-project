@@ -56,21 +56,21 @@
       <Text fill="WHITE" layoutX="573.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$8.0" wrappingWidth="36.83154296875" />
       <Text fill="WHITE" layoutX="273.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cheese: peper jack, cheddar, or Swiss" />
       <Text fill="WHITE" layoutX="273.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fillings: bacon, fire-roasted Pueblo green chillies, tomato, avocado, apple, or roasted mushrooms" wrappingWidth="321.021484375" />
-      <Button layoutX="81.0" layoutY="17.0" mnemonicParsing="false" style="-fx-background-color: #9e9624;" text="My Account " textFill="WHITE">
+      <Button layoutX="81.0" layoutY="17.0" mnemonicParsing="false" style="-fx-background-color: #9e9624;" text="Main Menu" onAction="#mainMenu" textFill="WHITE">
          <font>
             <Font name="American Typewriter" size="13.0" />
          </font></Button>
-      <Button layoutX="511.0" layoutY="17.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #9e9624;" text="My Cart" textFill="WHITE">
+      <Button layoutX="511.0" layoutY="17.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #9e9624;" text="My Cart" onAction="#myCart" textFill="WHITE">
          <font>
             <Font name="American Typewriter" size="13.0" />
          </font></Button>
-      <Button layoutX="519.0" layoutY="134.0" mnemonicParsing="false" text="Add To Cart" />
-      <Button layoutX="519.0" layoutY="205.0" mnemonicParsing="false" text="Add To Cart" />
-      <Button layoutX="519.0" layoutY="251.0" mnemonicParsing="false" text="Add To Cart" />
-      <Button layoutX="519.0" layoutY="347.0" mnemonicParsing="false" text="Add To Cart" />
+      <Button fx:id="blta" layoutX="519.0" layoutY="134.0" mnemonicParsing="false" text="Add To Cart" onAction="#addToCart" />
+      <Button fx:id="classicChicken" layoutX="519.0" layoutY="205.0" mnemonicParsing="false" text="Add To Cart" onAction="#addToCart"/>
+      <Button fx:id="fishTacos" layoutX="519.0" layoutY="251.0" mnemonicParsing="false" text="Add To Cart" onAction="#addToCart"/>
+      <Button fx:id="grilledCheese" layoutX="519.0" layoutY="347.0" mnemonicParsing="false" text="Add To Cart" onAction="#addToCart"/>
       <ImageView fitHeight="161.0" fitWidth="160.0" layoutX="11.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../../Downloads/sandwich-on-black-background-vector-21598261.jpg" />
+            <Image url="@../utils/sandwich-on-black-background-vector-21598261.jpg" />
          </image>
       </ImageView>
    </children>

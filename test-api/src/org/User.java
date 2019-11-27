@@ -7,6 +7,7 @@ import java.util.Map;
 
 public class User {
     private Map<String, String> cart;
+    private String username;
     private String firstName;
     private String lastName;
     private String email;
@@ -15,6 +16,7 @@ public class User {
     private Database db = new Database();
 
     public User(String username) {
+        this.username = username;
         this.firstName = db.getFirstName(username);
         this.lastName = db.getLastName(username);
         this.email = db.getEmail(username);
@@ -30,4 +32,16 @@ public class User {
     public Map<String, String> getCart() {
         return cart;
     }
+
+    public String getFirstName() { return firstName; }
+
+    public String getLastName() { return lastName; }
+
+    public String getEmail() { return email; }
+
+    public String getPhoneNumber() { return phoneNumber; }
+
+    public String getUsername() { return username; }
+
+
 }

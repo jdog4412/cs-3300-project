@@ -15,9 +15,9 @@
         <URL value="@../utils/burger_picture.css" />
     </stylesheets>
     <children>
-        <Pane layoutX="16.0" layoutY="19.0" prefHeight="363.0" prefWidth="570.0" styleClass="pane">
+        <Pane layoutX="15.0" layoutY="19.0" prefHeight="363.0" prefWidth="570.0" style="-fx-background-color: black;" styleClass="pane">
             <children>
-                <Button layoutX="38.0" layoutY="323.0" mnemonicParsing="false" onAction="#cancel" text="Log out" textAlignment="CENTER">
+                <Button layoutX="38.0" layoutY="323.0" mnemonicParsing="false" onAction="#logOut" text="Log out" textAlignment="CENTER">
                     <textFill>
                         <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
                             <stops>
@@ -31,30 +31,23 @@
                <font>
                   <Font name="American Typewriter" size="13.0" />
                </font></Text>
-                <Text fill="WHITE" layoutX="37.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name :" wrappingWidth="175.22900390625" />
-                <TextField fx:id="firstNameField" layoutX="246.0" layoutY="88.0" prefHeight="17.0" prefWidth="220.0" />
-                <TextField fx:id="lastNameField" layoutX="246.0" layoutY="123.0" prefHeight="27.0" prefWidth="220.0" />
+                <Text fill="WHITE" layoutX="37.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name :" wrappingWidth="175.22900390625">
+               <font>
+                  <Font size="13.0" />
+               </font></Text>
                 <Text fill="WHITE" layoutX="35.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email Address : " wrappingWidth="161.22900390625">
                <font>
                   <Font name="American Typewriter" size="13.0" />
                </font></Text>
-                <TextField fx:id="emailField" layoutX="246.0" layoutY="159.0" prefHeight="27.0" prefWidth="220.0" />
                 <Text fill="WHITE" layoutX="32.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username :" wrappingWidth="167.22900390625">
                <font>
                   <Font name="American Typewriter" size="13.0" />
                </font></Text>
-                <TextField fx:id="usernameField" layoutX="246.0" layoutY="196.0" prefHeight="27.0" prefWidth="220.0" />
                 <Text fill="WHITE" layoutX="32.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number :" wrappingWidth="167.22900390625">
                <font>
                   <Font name="American Typewriter" size="13.0" />
                </font></Text>
-                <TextField fx:id="phoneNumberField" layoutX="246.0" layoutY="232.0" prefHeight="27.0" prefWidth="220.0" />
-                <Text fill="WHITE" layoutX="35.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Change Password : " wrappingWidth="161.22900390625">
-               <font>
-                  <Font name="American Typewriter" size="13.0" />
-               </font></Text>
-                <PasswordField fx:id="passwordField" layoutX="246.0" layoutY="267.0" prefHeight="27.0" prefWidth="220.0" />
-                <Button layoutX="116.0" layoutY="323.0" mnemonicParsing="false" onAction="#signup" text="Check out" textAlignment="CENTER">
+                <Button layoutX="127.0" layoutY="323.0" mnemonicParsing="false" onAction="#myCart" text="My Cart" textAlignment="CENTER">
                     <textFill>
                         <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
                             <stops>
@@ -69,6 +62,26 @@
                         <Font name="American Typewriter Bold" size="28.0" />
                     </font>
                 </Label>
+            <Text fx:id="firstName" fill="WHITE" layoutX="285.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NULL" />
+            <Text fx:id="lastName" fill="WHITE" layoutX="285.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NULL" />
+            <Text fx:id="email" fill="WHITE" layoutX="287.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NULL" />
+            <Text fx:id="username" fill="WHITE" layoutX="288.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NULL" />
+            <Text fx:id="phoneNumber" fill="WHITE" layoutX="286.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NULL" />
+            <Button layoutX="503.0" layoutY="323.0" mnemonicParsing="false" onAction="#edit" text="Edit" textAlignment="CENTER">
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#543939" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Button>
+            <Button layoutX="477.0" layoutY="22.0" mnemonicParsing="false" onAction="#mainMenu" style="-fx-background-color: #9e9426;" text="Main Menu" textFill="#fcfafa">
+               <font>
+                  <Font name="American Typewriter" size="13.0" />
+               </font>
+            </Button>
             </children>
         </Pane>
 

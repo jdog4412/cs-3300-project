@@ -55,6 +55,6 @@ public class MainMenuController extends AbstractController {
 
     @FXML
     private void goToAlcohol(ActionEvent event) {
-        SceneController.switchScenes(stage, SceneController.ALCOHOL, user);
+        SceneController.switchScenes(stage, SceneController.BEER, user);
     }
 }
