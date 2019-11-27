@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.net.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -13,14 +14,19 @@
       <URL value="@../utils/burger_picture.css" />
    </stylesheets>
    <children>
-      <Pane layoutX="65.0" layoutY="46.0" prefHeight="247.0" prefWidth="417.0" styleClass="pane">
+      <Pane layoutX="60.0" layoutY="65.0" prefHeight="247.0" prefWidth="417.0" styleClass="pane">
          <children>
             <Hyperlink layoutY="212.0" onAction="#signup" text="Sign up" />
             <Button layoutX="334.0" layoutY="201.0" mnemonicParsing="false" onAction="#login" text="Login" />
+            <TextField fx:id="usernameField" layoutX="132.0" layoutY="39.0" />
+            <Label layoutX="40.0" layoutY="47.0" text="username" textFill="WHITE" />
+            <Label layoutX="40.0" layoutY="83.0" text="password" textFill="WHITE" />
          </children></Pane>
-      <Label layoutX="89.0" layoutY="87.0" text="username" textFill="WHITE" />
-      <Label layoutX="89.0" layoutY="146.0" text="password" textFill="WHITE" />
-      <TextField fx:id="usernameField" layoutX="188.0" layoutY="81.0" />
-      <PasswordField fx:id="passwordField" layoutX="188.0" layoutY="140.0" onAction="#login"/>
+      <PasswordField fx:id="passwordField" layoutX="188.0" layoutY="140.0" onAction="#login" />
+      <Text fill="#fcfafa" layoutX="213.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clyde's Ordering App " wrappingWidth="247.54400634765625">
+         <font>
+            <Font name="American Typewriter" size="18.0" />
+         </font>
+      </Text>
    </children>
 </fx:root>
