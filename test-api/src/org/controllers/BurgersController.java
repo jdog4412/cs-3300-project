@@ -53,8 +53,10 @@ public class BurgersController extends AbstractController {
             items = getBlackBean(items);
         }
 
-        user.addItem(items.get(0), items.get(1));
-        Toast.makeText(stage, "Item successfully added", 2000, 500, 500);
+        if(!items.isEmpty()) {
+            user.addItem(items.get(0), items.get(1));
+            Toast.makeText(stage, "Item successfully added", 2000, 500, 500);
+        }
 
     }
 
@@ -73,7 +75,7 @@ public class BurgersController extends AbstractController {
 
     private List<String> getABC(List<String> items) {
         boolean inStock;
-        String abc = "A.B.C Burger";
+        String abc = "ABC Burger";
 
         inStock = db.checkInventory(abc);
         if (inStock) {
@@ -113,7 +115,7 @@ public class BurgersController extends AbstractController {
     private void notInStock() {
         Stage error = new Stage();
         error.setTitle("Item not in stock");
-        ErrorController controller = new ErrorController("../notInStock.fxml");
+        ErrorController controller = new ErrorController("../fxmls/notInStock.fxml");
         error.setScene(new Scene(controller));
         error.show();
     }

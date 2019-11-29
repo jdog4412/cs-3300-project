@@ -9,6 +9,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
+import javafx.scene.text.TextBoundsType;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
@@ -23,6 +24,8 @@ public final class Toast {
         Text text = new Text(toastMsg);
         text.setFont(Font.font("American Typewriter", 25));
         text.setFill(Paint.valueOf("#9e9624"));
+        text.setStyle("-fx-background-color: 'black'; -fx-effect: dropshadow(three-pass-box, black, 30, 0.85, 0, 0); -fx-background-radius: 30");
+        text.setBoundsType(TextBoundsType.LOGICAL_VERTICAL_CENTER);
 
         StackPane root = new StackPane(text);
         root.setStyle("-fx-background-radius: 20; -fx-background-color: rgba(0, 0, 0, 0.2); -fx-padding: 50px;");

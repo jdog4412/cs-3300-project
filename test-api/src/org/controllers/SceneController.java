@@ -5,6 +5,8 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import org.User;
 
+import java.sql.Connection;
+
 public class SceneController {
 
     public static final String MAIN_MENU = "../fxmls/mainMenu.fxml";
@@ -21,6 +23,7 @@ public class SceneController {
     public static final String SALADS = "../fxmls/salads.fxml";
     public static final String CONFIRM = "../fxmls/confirmPage.fxml";
     public static final String CHECKOUT = "../fxmls/checkout.fxml";
+
 
 
     public static void switchScenes(Stage stage, String fxml, User user) {

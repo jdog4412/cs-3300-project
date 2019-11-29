@@ -8,6 +8,7 @@ import javafx.stage.Stage;
 import org.User;
 import org.utils.Database;
 import org.utils.Utils;
+import org.utils.WorkIndicatorDialog;
 
 
 public class LoginController extends AbstractController {
@@ -25,20 +26,23 @@ public class LoginController extends AbstractController {
 
     @FXML
     private void login(ActionEvent event) {
+        WorkIndicatorDialog<Void, Boolean> loginDialog = new WorkIndicatorDialog<>(stage.getOwner(), "Logging in...");
         String username = usernameField.getText();
         String password = passwordField.getText();
 
-        boolean login = false;
-
         if(!username.equals("") && !password.equals(""))  {
-            login = db.checkUsernameAndPassword(username, password);
 
-            if (login) {
-                User user = new User(username);
-                SceneController.switchScenes(stage, "../fxmls/mainMenu.fxml", user);
-            } else {
-                invalidLogin();
-            }
+            loginDialog.addTaskEndNotification(c -> {
+                if(c) {
+                    User user = new User(username);
+                    SceneController.switchScenes(stage, SceneController.MAIN_MENU, user);
+                } else {
+                    invalidLogin();
+                }
+            });
+
+            loginDialog.execute(null, (ignore, c) -> db.checkUsernameAndPassword(username, password));
+
         }
     }
 
