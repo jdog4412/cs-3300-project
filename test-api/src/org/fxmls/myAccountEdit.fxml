@@ -46,7 +46,7 @@
                         <Font name="American Typewriter Bold" size="28.0" />
                     </font>
                 </Label>
-            <Button layoutX="500.0" layoutY="323.0" mnemonicParsing="false" onAction="#saveInfo" text="Done" textAlignment="CENTER">
+            <Button layoutX="500.0" layoutY="323.0" mnemonicParsing="false" onAction="#saveInfo" text="Done" textAlignment="CENTER" style="-fx-background-color: #9e9426;" textFill="#fcfafa">
                <textFill>
                   <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
                      <stops>
@@ -62,7 +62,7 @@
             <TextField fx:id="username" layoutX="168.0" layoutY="234.0" />
             <TextField fx:id="phoneNumber"  layoutX="168.0" layoutY="201.0" />
             <PasswordField fx:id="newPassword"  layoutX="168.0" layoutY="162.0" />
-            <Button layoutX="417.0" layoutY="323.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" textAlignment="CENTER">
+            <Button layoutX="417.0" layoutY="323.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" textAlignment="CENTER" style="-fx-background-color: #9e9426;" textFill="#fcfafa">
                <textFill>
                   <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
                      <stops>

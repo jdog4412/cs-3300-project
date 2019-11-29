@@ -12,7 +12,7 @@
    <children>
       <ImageView fitHeight="213.0" fitWidth="198.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
          <image>
-            <Image url="@../utils/Clyde's%20Gastropub.jpg" />
+            <Image url="@../utils/Clyde's Gastropub.jpg" />
          </image>
       </ImageView>
       <Text fill="#9e9624" layoutX="201.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SANDWICHES">
@@ -56,7 +56,7 @@
       <Text fill="WHITE" layoutX="573.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$8.0" wrappingWidth="36.83154296875" />
       <Text fill="WHITE" layoutX="273.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cheese: peper jack, cheddar, or Swiss" />
       <Text fill="WHITE" layoutX="273.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fillings: bacon, fire-roasted Pueblo green chillies, tomato, avocado, apple, or roasted mushrooms" wrappingWidth="321.021484375" />
-      <Button layoutX="81.0" layoutY="17.0" mnemonicParsing="false" style="-fx-background-color: #9e9624;" text="Main Menu" onAction="#mainMenu" textFill="WHITE">
+      <Button layoutX="81.0" layoutY="17.0" mnemonicParsing="false" onAction="#mainMenu" text="Main Menu" style="-fx-background-color: #9e9426;" textFill="#fcfafa">
          <font>
             <Font name="American Typewriter" size="13.0" />
          </font></Button>
@@ -64,10 +64,10 @@
          <font>
             <Font name="American Typewriter" size="13.0" />
          </font></Button>
-      <Button fx:id="blta" layoutX="519.0" layoutY="134.0" mnemonicParsing="false" text="Add To Cart" onAction="#addToCart" />
-      <Button fx:id="classicChicken" layoutX="519.0" layoutY="205.0" mnemonicParsing="false" text="Add To Cart" onAction="#addToCart"/>
-      <Button fx:id="fishTacos" layoutX="519.0" layoutY="251.0" mnemonicParsing="false" text="Add To Cart" onAction="#addToCart"/>
-      <Button fx:id="grilledCheese" layoutX="519.0" layoutY="347.0" mnemonicParsing="false" text="Add To Cart" onAction="#addToCart"/>
+      <Button fx:id="blta" layoutX="519.0" layoutY="134.0" mnemonicParsing="false" text="Add To Cart" onAction="#addToCart" style="-fx-background-color: #9e9426;" textFill="#fcfafa"/>
+      <Button fx:id="classicChicken" layoutX="519.0" layoutY="205.0" mnemonicParsing="false" text="Add To Cart" onAction="#addToCart" style="-fx-background-color: #9e9426;" textFill="#fcfafa"/>
+      <Button fx:id="fishTacos" layoutX="519.0" layoutY="251.0" mnemonicParsing="false" text="Add To Cart" onAction="#addToCart" style="-fx-background-color: #9e9426;" textFill="#fcfafa"/>
+      <Button fx:id="grilledCheese" layoutX="519.0" layoutY="347.0" mnemonicParsing="false" text="Add To Cart" onAction="#addToCart" style="-fx-background-color: #9e9426;" textFill="#fcfafa"/>
       <ImageView fitHeight="161.0" fitWidth="160.0" layoutX="11.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../utils/sandwich-on-black-background-vector-21598261.jpg" />

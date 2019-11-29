@@ -14,33 +14,34 @@
    <stylesheets>
       <URL value="@../utils/burger_picture.css" />
    </stylesheets>
-
+   <Pane layoutX="15.0" layoutY="19.0" prefHeight="363.0" prefWidth="570.0" style="-fx-background-color: black;" styleClass="pane">
    <children>
       <Text fill="#fffafa" layoutX="253.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Cart">
          <font>
             <Font name="American Typewriter" size="24.0" />
          </font>
       </Text>
-      <Button layoutX="76.0" layoutY="31.0" mnemonicParsing="false" style="-fx-background-color: #9e9426;" text="My Account" textFill="#fcf8f8" onAction="#myAccount">
+      <Button layoutX="76.0" layoutY="31.0" mnemonicParsing="false" style="-fx-background-color: #9e9426;" textFill="#fcfafa" text="My Account"  onAction="#myAccount">
          <font>
             <Font name="American Typewriter" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="433.0" layoutY="31.0" mnemonicParsing="false" style="-fx-background-color: #9e9426;" text="Main Menu" textFill="#fcfafa" onAction="#mainMenu">
+      <Button layoutX="433.0" layoutY="31.0" mnemonicParsing="false" style="-fx-background-color: #9e9426;" textFill="#fcfafa" text="Main Menu"  onAction="#mainMenu">
          <font>
             <Font name="American Typewriter" size="13.0" />
          </font>
       </Button>
-      <Label layoutX="387.0" layoutY="301.0" prefHeight="18.0" prefWidth="46.0" text="Total" textFill="#141313">
+      <Label layoutX="387.0" layoutY="301.0" prefHeight="18.0" prefWidth="46.0" text="Total" textFill="#fcfafa">
          <font>
             <Font name="System Bold" size="14.0" />
          </font></Label>
       <ListView fx:id="listView" layoutX="92.0" layoutY="76.0" prefHeight="205.0" prefWidth="424.0" />
       <TextField fx:id="textField" layoutX="439.0" layoutY="296.0" prefHeight="27.0" prefWidth="78.0" text="\$0.00" />
-      <Button layoutX="366.0" layoutY="338.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="153.0" style="-fx-background-color: #9e9426;" text="Proceed to checkout" textFill="#fcf8f8" onAction="#checkout">
+      <Button layoutX="366.0" layoutY="338.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="153.0" style="-fx-background-color: #9e9426;" textFill="#fcfafa" text="Proceed to checkout"  onAction="#checkout">
          <font>
             <Font name="American Typewriter" size="13.0" />
          </font>
       </Button>
    </children>
+   </Pane>
 </fx:root>
