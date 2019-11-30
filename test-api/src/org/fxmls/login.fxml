@@ -9,26 +9,28 @@
 <?import javafx.scene.layout.*?>
 <?import java.net.URL?>
 
-<fx:root prefHeight="400.0" prefWidth="600.0" styleClass="anchor" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
-   <stylesheets>
-      <URL value="@../utils/burger_picture.css" />
-   </stylesheets>
-   <children>
-      <Pane layoutX="60.0" layoutY="65.0" prefHeight="247.0" prefWidth="417.0" styleClass="pane">
-         <children>
-            <Label layoutX="40.0" layoutY="47.0" text="username" textFill="WHITE" />
-            <Label layoutX="40.0" layoutY="83.0" text="password" textFill="WHITE" />
-            <Hyperlink layoutY="209.0" onAction="#signup" text="Sign up" />
-            <Button layoutX="334.0" layoutY="201.0" mnemonicParsing="false" onAction="#login" style="-fx-background-color: #9e9426;" text="Login" textFill="#fcfafa" />
-            <TextField fx:id="usernameField" layoutX="132.0" layoutY="47.0" />
-            <PasswordField fx:id="passwordField" layoutX="132.0" layoutY="83.0" onAction="#login" />
-
-         </children></Pane>
-
-      <Text fill="#fcfafa" layoutX="213.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clyde's Ordering App " wrappingWidth="247.54400634765625">
-         <font>
-            <Font name="American Typewriter" size="18.0" />
-         </font>
-      </Text>
-   </children>
+<fx:root prefHeight="400.0" prefWidth="600.0" styleClass="anchor" type="javafx.scene.layout.AnchorPane"
+         xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@../utils/burger_picture.css"/>
+    </stylesheets>
+    <children>
+        <Pane layoutX="60.0" layoutY="65.0" prefHeight="247.0" prefWidth="417.0" styleClass="pane">
+            <children>
+                <Label layoutX="40.0" layoutY="47.0" text="username" textFill="WHITE"/>
+                <Label layoutX="40.0" layoutY="83.0" text="password" textFill="WHITE"/>
+                <Hyperlink layoutY="209.0" onAction="#signup" text="Sign up"/>
+                <Button layoutX="334.0" layoutY="201.0" mnemonicParsing="false" onAction="#login"
+                        style="-fx-background-color: #9e9426;" text="Login" textFill="#fcfafa"/>
+                <TextField fx:id="usernameField" layoutX="132.0" layoutY="47.0"/>
+                <PasswordField fx:id="passwordField" layoutX="132.0" layoutY="83.0" onAction="#login"/>
+            </children>
+        </Pane>
+       <Text fill="#fffefe" layoutX="125.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CLYDE'S PICKUP"
+             textAlignment="CENTER" wrappingWidth="275.22900390625">
+          <font>
+             <Font name="American Typewriter" size="36.0"/>
+          </font>
+       </Text>
+    </children>
 </fx:root>

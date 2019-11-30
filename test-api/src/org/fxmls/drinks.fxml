@@ -25,7 +25,11 @@
          </font>
       </Button>
       <Button fx:id="iceTea" layoutX="392.0" layoutY="99.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="97.0" text="Add To Cart" onAction="#addToCart" style="-fx-background-color: #9e9426;" textFill="#fcfafa"/>
-      <Text fill="WHITE" layoutX="350.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$1.5" />
+      <Text fill="WHITE" layoutX="350.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$1.5" >
+         <font>
+            <Font name="Apple Chancery" size="18.0" />
+         </font>
+      </Text>
       <Text fill="#a18822" layoutX="102.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ice Tea" wrappingWidth="97.0">
          <font>
             <Font name="Apple Chancery" size="24.0" />
@@ -46,10 +50,26 @@
             <Font name="Apple Chancery" size="24.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="349.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$2.0" />
-      <Text fill="WHITE" layoutX="350.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$1.5" />
-      <Text fill="WHITE" layoutX="349.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$3.0" />
-      <Text fill="WHITE" layoutX="349.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$3.0" />
+      <Text fill="WHITE" layoutX="349.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$2.0" >
+         <font>
+            <Font name="Apple Chancery" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="350.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$1.5" >
+         <font>
+            <Font name="Apple Chancery" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="349.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$3.0" >
+         <font>
+            <Font name="Apple Chancery" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="349.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$3.0" >
+         <font>
+            <Font name="Apple Chancery" size="18.0" />
+         </font>
+      </Text>
       <Text fill="#a18822" layoutX="99.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Two Leaves Hot Tea" wrappingWidth="213.0">
          <font>
             <Font name="Apple Chancery" size="24.0" />
@@ -57,7 +77,7 @@
       </Text>
       <Button fx:id="lemonade" layoutX="392.0" layoutY="141.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="97.0" text="Add To Cart" onAction="#addToCart" style="-fx-background-color: #9e9426;" textFill="#fcfafa"/>
       <Button fx:id="coffee" layoutX="392.0" layoutY="187.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="97.0" text="Add To Cart" onAction="#addToCart" style="-fx-background-color: #9e9426;" textFill="#fcfafa"/>
-      <Button fx:id="hotTea" layoutX="392.0" layoutY="229.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="97.0" text="Add To Cart" onAction="#addToCart" style="-fx-background-color: #9e9426;" textFill="#fcfafa"/>
-      <Button fx:id="soda" layoutX="392.0" layoutY="273.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="97.0" text="Add To Cart" onAction="#addToCart" style="-fx-background-color: #9e9426;" textFill="#fcfafa"/>
+      <Button fx:id="hotTea" layoutX="392.0" layoutY="233.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="97.0" text="Add To Cart" onAction="#addToCart" style="-fx-background-color: #9e9426;" textFill="#fcfafa"/>
+      <Button fx:id="soda" layoutX="392.0" layoutY="279.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="97.0" text="Add To Cart" onAction="#addToCart" style="-fx-background-color: #9e9426;" textFill="#fcfafa"/>
    </children>
 </fx:root>

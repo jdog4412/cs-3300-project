@@ -26,22 +26,29 @@ public class LoginController extends AbstractController {
 
     @FXML
     private void login(ActionEvent event) {
-        WorkIndicatorDialog<Void, Boolean> loginDialog = new WorkIndicatorDialog<>(stage.getOwner(), "Logging in...");
+        WorkIndicatorDialog<Void, User> loginDialog = new WorkIndicatorDialog<>(stage.getOwner(), "Logging in...");
         String username = usernameField.getText();
         String password = passwordField.getText();
 
         if(!username.equals("") && !password.equals(""))  {
 
-            loginDialog.addTaskEndNotification(c -> {
-                if(c) {
-                    User user = new User(username);
+            loginDialog.addTaskEndNotification(user -> {
+                if(user != null) {
                     SceneController.switchScenes(stage, SceneController.MAIN_MENU, user);
                 } else {
                     invalidLogin();
                 }
             });
 
-            loginDialog.execute(null, (ignore, c) -> db.checkUsernameAndPassword(username, password));
+            loginDialog.execute(null, (ignore1, status) -> {
+                boolean successful = db.checkUsernameAndPassword(username, password);
+
+                if(successful) {
+                    status.accept("User has been authenticated, fetching your user information...");
+                    return new User(username);
+                }
+                return null;
+            });
 
         }
     }

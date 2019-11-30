@@ -27,23 +27,23 @@
                         </RadialGradient>
                     </textFill>
                 </Button>
-                <Text fill="WHITE" layoutX="37.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name :" wrappingWidth="192.22900390625">
+                <Text fill="WHITE" layoutX="100.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name :" wrappingWidth="192.22900390625">
                <font>
                   <Font name="American Typewriter" size="13.0" />
                </font></Text>
-                <Text fill="WHITE" layoutX="37.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name :" wrappingWidth="175.22900390625">
+                <Text fill="WHITE" layoutX="100.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name :" wrappingWidth="175.22900390625">
                <font>
                   <Font size="13.0" />
                </font></Text>
-                <Text fill="WHITE" layoutX="35.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email Address : " wrappingWidth="161.22900390625">
+                <Text fill="WHITE" layoutX="100.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email Address : " wrappingWidth="161.22900390625">
                <font>
                   <Font name="American Typewriter" size="13.0" />
                </font></Text>
-                <Text fill="WHITE" layoutX="32.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username :" wrappingWidth="167.22900390625">
+                <Text fill="WHITE" layoutX="100.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username :" wrappingWidth="167.22900390625">
                <font>
                   <Font name="American Typewriter" size="13.0" />
                </font></Text>
-                <Text fill="WHITE" layoutX="32.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number :" wrappingWidth="167.22900390625">
+                <Text fill="WHITE" layoutX="100.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number :" wrappingWidth="167.22900390625">
                <font>
                   <Font name="American Typewriter" size="13.0" />
                </font></Text>
@@ -57,7 +57,7 @@
                         </RadialGradient>
                     </textFill>
                 </Button>
-                <Label layoutX="14.0" layoutY="7.0" prefHeight="58.0" prefWidth="547.0" text="CLYDE'S GASTROPUB MYACCOUNT" textAlignment="CENTER">
+                <Label layoutX="14.0" layoutY="7.0" prefHeight="58.0" prefWidth="547.0" text="CLYDE'S GASTROPUB MY ACCOUNT" textAlignment="CENTER">
                     <font>
                         <Font name="American Typewriter Bold" size="28.0" />
                     </font>

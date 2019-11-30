@@ -8,6 +8,7 @@ import javafx.stage.Stage;
 import org.User;
 import org.utils.Database;
 import org.utils.Utils;
+import org.utils.WorkIndicatorDialog;
 
 public class SignUpController extends AbstractController {
 
@@ -24,15 +25,27 @@ public class SignUpController extends AbstractController {
 
     @FXML
     private void signup(ActionEvent event) {
+
+        WorkIndicatorDialog<Void, User> signUpDialog = new WorkIndicatorDialog<>(stage.getOwner(), "Creating new User...");
+
         if (!areFieldsEmpty()) {
-            if (passwordField.getText().equals(confirmPasswordField.getText())) {
-                db.setUser(usernameField.getText(), passwordField.getText(), firstNameField.getText(),
-                        lastNameField.getText(), emailField.getText(), " ", phoneNumberField.getText());
-                User user = new User(usernameField.getText());
-                SceneController.switchScenes(stage, "../fxmls/mainMenu.fxml", user);
-            } else {
-                passwordsDontMatch();
-            }
+
+                signUpDialog.addTaskEndNotification(user -> {
+                    if (user != null) {
+                        SceneController.switchScenes(stage, SceneController.MAIN_MENU, user);
+                    } else {
+                        passwordsDontMatch();
+                    }
+                });
+
+            signUpDialog.execute(null, (ignore1, ignore2) -> {
+                if (passwordField.getText().equals(confirmPasswordField.getText())) {
+                    db.setUser(usernameField.getText(), passwordField.getText(), firstNameField.getText(),
+                            lastNameField.getText(), emailField.getText(), " ", phoneNumberField.getText());
+                    return new User(usernameField.getText());
+                }
+                return null;
+            });
         } else {
             emptyFields();
         }
@@ -40,7 +53,7 @@ public class SignUpController extends AbstractController {
 
     @FXML
     private void cancel(ActionEvent event) {
-        SceneController.switchScenes(stage, "../fxmls/login.fxml", null);
+        SceneController.switchScenes(stage, SceneController.LOGIN, null);
     }
 
     private void emptyFields() {

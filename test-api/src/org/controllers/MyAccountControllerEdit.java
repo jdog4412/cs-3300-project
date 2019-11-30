@@ -9,6 +9,7 @@ import javafx.stage.Stage;
 import org.User;
 import org.utils.Database;
 import org.utils.Utils;
+import org.utils.WorkIndicatorDialog;
 
 public class MyAccountControllerEdit extends AbstractController {
 
@@ -31,11 +32,25 @@ public class MyAccountControllerEdit extends AbstractController {
 
     @FXML
     private void saveInfo(ActionEvent event) {
+        WorkIndicatorDialog<Void, User> editDialog = new WorkIndicatorDialog<>(stage.getOwner(), "Updating information...");
+
         if (!areFieldsEmpty()) {
-            db.setUser(username.getText(), newPassword.getText(), firstName.getText(),
-                    lastName.getText(), email.getText(), " ", phoneNumber.getText());
-            User user = new User(username.getText());
-            SceneController.switchScenes(stage, "../fxmls/mainMenu.fxml", user);
+
+            editDialog.addTaskEndNotification(user -> {
+                SceneController.switchScenes(stage, SceneController.ACCOUNT, user);
+            });
+
+            editDialog.execute(null, (ignore1, status) -> {
+                String card = user.getCard();
+                db.deleteUser(user.getUsername());
+                db.setUser(username.getText(), newPassword.getText(), firstName.getText(),
+                        lastName.getText(), email.getText(), card, phoneNumber.getText());
+                status.accept("Information saved, returning to Account Information...");
+                return new User(username.getText());
+            });
+
+
+
         } else {
             emptyFields();
         }
