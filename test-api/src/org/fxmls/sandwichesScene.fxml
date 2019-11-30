@@ -30,32 +30,33 @@
             <Font name="Apple Chancery" size="18.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="241.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sourdough, bacon, leaf lettuce, tomato, avocado garlic aioli." wrappingWidth="271.98779296875" />
-      <Text fill="WHITE" layoutX="566.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$7.5" />
+      <Text fill="WHITE" layoutX="220.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sourdough, bacon, leaf lettuce, tomato, avocado garlic aioli." wrappingWidth="271.98779296875" />
+      <Text fill="WHITE" layoutX="265.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$7.5" />
       <Text fill="#a18822" layoutX="210.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Classic Chicken Sandwich">
          <font>
             <Font name="Apple Chancery" size="18.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="242.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grilled Red Bird chicken breast, lettuce, tomato, red onion, pickle, avocado garlic aioli." wrappingWidth="281.45263671875" />
-      <Text fill="WHITE" layoutX="566.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$8.5" />
+      <Text fill="WHITE" layoutX="220.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grilled Red Bird chicken breast, lettuce, tomato, red onion, pickle, avocado garlic aioli." wrappingWidth="281.45263671875" />
+      <Text fill="WHITE" layoutX="430.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$8.5" />
       <Text fill="#a18822" layoutX="210.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ahi Fish Tacos">
          <font>
             <Font name="Apple Chancery" size="18.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="251.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seared ahi tuna, red cabbage, carrot, seasame seeds, topped with cilantro lime crema." wrappingWidth="281.45263671875" />
-      <Text fill="WHITE" layoutX="279.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*No side included with this dish. 3 full tacos per order $8.5" wrappingWidth="330.33447265625" />
+      <Text fill="WHITE" layoutX="220.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seared ahi tuna, red cabbage, carrot, seasame seeds, topped with cilantro lime crema." wrappingWidth="281.45263671875" />
+      <Text fill="WHITE" layoutX="237.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*No side included with this dish. 3 full tacos per order" wrappingWidth="330.33447265625" />
+      <Text fill="WHITE" layoutX="340.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$8.5" />
       <Text fill="#a18822" layoutX="208.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BYO Grilled Cheese (V)">
          <font>
             <Font name="Apple Chancery" size="18.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="251.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sourdough with choice of two cheeses and two fillings." />
-      <Text fill="WHITE" layoutX="268.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Additional cheese or fillings $1.0 each" />
-      <Text fill="WHITE" layoutX="573.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$8.0" wrappingWidth="36.83154296875" />
-      <Text fill="WHITE" layoutX="273.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cheese: peper jack, cheddar, or Swiss" />
-      <Text fill="WHITE" layoutX="273.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fillings: bacon, fire-roasted Pueblo green chillies, tomato, avocado, apple, or roasted mushrooms" wrappingWidth="321.021484375" />
+      <Text fill="WHITE" layoutX="220.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sourdough with choice of two cheeses and two fillings." />
+      <Text fill="WHITE" layoutX="237.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Additional cheese or fillings $1.0 each" />
+      <Text fill="WHITE" layoutX="405.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$8.0" wrappingWidth="36.83154296875" />
+      <Text fill="WHITE" layoutX="251.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cheese: peper jack, cheddar, or Swiss" />
+      <Text fill="WHITE" layoutX="251.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fillings: bacon, fire-roasted Pueblo green chillies, tomato, avocado, apple, or roasted mushrooms" wrappingWidth="321.021484375" />
       <Button layoutX="81.0" layoutY="17.0" mnemonicParsing="false" onAction="#mainMenu" text="Main Menu" style="-fx-background-color: #9e9426;" textFill="#fcfafa">
          <font>
             <Font name="American Typewriter" size="13.0" />
@@ -64,11 +65,11 @@
          <font>
             <Font name="American Typewriter" size="13.0" />
          </font></Button>
-      <Button fx:id="blta" layoutX="519.0" layoutY="134.0" mnemonicParsing="false" text="Add To Cart" onAction="#addToCart" style="-fx-background-color: #9e9426;" textFill="#fcfafa"/>
-      <Button fx:id="classicChicken" layoutX="519.0" layoutY="205.0" mnemonicParsing="false" text="Add To Cart" onAction="#addToCart" style="-fx-background-color: #9e9426;" textFill="#fcfafa"/>
-      <Button fx:id="fishTacos" layoutX="519.0" layoutY="251.0" mnemonicParsing="false" text="Add To Cart" onAction="#addToCart" style="-fx-background-color: #9e9426;" textFill="#fcfafa"/>
-      <Button fx:id="grilledCheese" layoutX="519.0" layoutY="347.0" mnemonicParsing="false" text="Add To Cart" onAction="#addToCart" style="-fx-background-color: #9e9426;" textFill="#fcfafa"/>
-      <ImageView fitHeight="161.0" fitWidth="160.0" layoutX="11.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+      <Button fx:id="blta" layoutX="519.0" layoutY="112.0" mnemonicParsing="false" text="Add To Cart" onAction="#addToCart" style="-fx-background-color: #9e9426;" textFill="#fcfafa"/>
+      <Button fx:id="classicChicken" layoutX="519.0" layoutY="173.0" mnemonicParsing="false" text="Add To Cart" onAction="#addToCart" style="-fx-background-color: #9e9426;" textFill="#fcfafa"/>
+      <Button fx:id="fishTacos" layoutX="519.0" layoutY="237.0" mnemonicParsing="false" text="Add To Cart" onAction="#addToCart" style="-fx-background-color: #9e9426;" textFill="#fcfafa"/>
+      <Button fx:id="grilledCheese" layoutX="519.0" layoutY="318.0" mnemonicParsing="false" text="Add To Cart" onAction="#addToCart" style="-fx-background-color: #9e9426;" textFill="#fcfafa"/>
+      <ImageView fitHeight="161.0" fitWidth="160.0" layoutX="11.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../utils/sandwich-on-black-background-vector-21598261.jpg" />
          </image>

@@ -20,7 +20,7 @@
             <Font name="American Typewriter" size="13.0" />
          </font>
       </Button>
-      <Text fill="#9e9624" layoutX="244.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Libations">
+      <Text fill="#9e9624" layoutX="244.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LIBATIONS">
          <font>
             <Font name="American Typewriter Bold" size="28.0" />
          </font>
@@ -85,7 +85,7 @@
             <Font name="Apple Chancery" size="18.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="234.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$7.0" wrappingWidth="32.092041015625">
+      <Text fill="WHITE" layoutX="250.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$7.0" wrappingWidth="32.092041015625">
          <font>
             <Font size="12.0" />
          </font>
@@ -105,27 +105,27 @@
             <Font name="Apple Chancery" size="18.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="380.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$3.5" wrappingWidth="32.092041015625">
+      <Text fill="WHITE" layoutX="390.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$3.5" wrappingWidth="32.092041015625">
          <font>
             <Font size="12.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="419.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$4.5" wrappingWidth="32.092041015625">
+      <Text fill="WHITE" layoutX="430.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$4.5" wrappingWidth="32.092041015625">
          <font>
             <Font size="12.0" />
          </font>
       </Text>
-      <Text fill="#dac778" layoutX="331.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blue Moon   ">
+      <Text fill="#dac778" layoutX="331.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blue Moon">
          <font>
             <Font name="Apple Chancery" size="18.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="333.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blue Moon (Belgian Wheat)" wrappingWidth="154.092041015625">
+      <Text fill="WHITE" layoutX="333.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blue Moon" wrappingWidth="154.092041015625">
          <font>
             <Font size="12.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="426.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$5.5" wrappingWidth="32.092041015625">
+      <Text fill="WHITE" layoutX="426.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$5.5" wrappingWidth="32.092041015625">
          <font>
             <Font size="12.0" />
          </font>

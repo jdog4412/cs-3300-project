@@ -6,7 +6,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class User {
-    private Map<String, String> cart;
+    private Map<String, String> cartWithPrice;
+    private Map<String, Integer> cartWithQuantity;
     private String username;
     private String firstName;
     private String lastName;
@@ -22,15 +23,30 @@ public class User {
         this.email = db.getEmail(username);
         this.phoneNumber = db.getPhoneNumber(username);
         this.card = db.getCard(username);
-        this.cart = new HashMap<>();
+        this.cartWithPrice = new HashMap<>();
+        this.cartWithQuantity = new HashMap<>();
     }
 
     public void addItem(String item, String value) {
-        cart.put(item, value);
+        int i = 0;
+        if (!cartWithQuantity.isEmpty() && cartWithQuantity.get(item) != null) {
+            i = cartWithQuantity.get(item);
+            cartWithPrice.put(item, value);
+            i++;
+            cartWithQuantity.put(item, i);
+        } else {
+            i++;
+            cartWithPrice.put(item, value);
+            cartWithQuantity.put(item, i);
+        }
     }
 
-    public Map<String, String> getCart() {
-        return cart;
+    public Map<String, String> getCartWithPrice() {
+        return cartWithPrice;
+    }
+
+    public Map<String, Integer> getCartWithQuantity() {
+        return cartWithQuantity;
     }
 
     public String getFirstName() { return firstName; }
@@ -42,6 +58,8 @@ public class User {
     public String getPhoneNumber() { return phoneNumber; }
 
     public String getUsername() { return username; }
+
+    public String getCard() { return card; }
 
 
 }

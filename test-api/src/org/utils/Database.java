@@ -13,6 +13,18 @@ public class Database {
         return DriverManager.getConnection(dbName, dbUsername, dbPassword);
     }
 
+    public void deleteUser(String username) {
+        String SQL = "DELETE FROM public.user WHERE username=?";
+
+        try (Connection conn = connect()) {
+            PreparedStatement pstmt = conn.prepareStatement(SQL);
+            pstmt.setString(1, username);
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
     public void setUser(String username, String password, String firstName, String lastName, String email, String card, String phoneNumber) {
         String SQL = "INSERT INTO public.user(username, password, first_name, last_name, email, card, phone_number) " +
                 "VALUES(?, ?, ?, ?, ?, ?, ?)";

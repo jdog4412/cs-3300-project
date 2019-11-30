@@ -1,9 +1,12 @@
 package org.controllers;
 
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
 import org.User;
 import org.utils.Utils;
@@ -44,20 +47,21 @@ public class CartController extends AbstractController {
     }
 
     private void populateField(ListView listView, TextField textField, User user) {
-        Map<String, String> cart = user.getCart();
+        Map<String, String> cart = user.getCartWithPrice();
         double total = 0.0;
 
         for (Map.Entry mapElement : cart.entrySet()) {
             String item = (String) mapElement.getKey();
+            int quantity = user.getCartWithQuantity().get(item);
             String value = (String) mapElement.getValue();
-            String full = item + "\t\t\t\t\t" + value;
+            String full = String.format("(x%s) %s", quantity, item);
 
             listView.getItems().add(full);
-            total = total + Double.parseDouble(value);
+            total = total + (Double.parseDouble(value) * quantity);
 
         }
         textField.clear();
-        textField.setText(Double.toString(total));
+        textField.setText("$ " + total);
 
     }
 
