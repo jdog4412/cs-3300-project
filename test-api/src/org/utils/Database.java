@@ -66,6 +66,23 @@ public class Database {
         return check;
     }
 
+    public String getPassword(String username) {
+        String SQL = "SELECT password FROM public.user WHERE username= ?";
+        String password = "";
+
+        try (Connection conn = connect()) {
+            PreparedStatement pstmt = conn.prepareStatement(SQL);
+            pstmt.setString(1, username);
+            ResultSet rs = pstmt.executeQuery();
+            while(rs.next()) {
+                password = rs.getString("password");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return password;
+    }
+
     public String getFirstName(String username) {
         String SQL = "SELECT first_name FROM public.user WHERE username= ?";
         String firstName = "";

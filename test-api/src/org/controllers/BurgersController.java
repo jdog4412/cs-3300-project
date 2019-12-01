@@ -75,7 +75,7 @@ public class BurgersController extends AbstractController {
 
     private List<String> getABC(List<String> items) {
         boolean inStock;
-        String abc = "ABC Burger";
+        String abc = "A.B.C. Burger";
 
         inStock = db.checkInventory(abc);
         if (inStock) {
