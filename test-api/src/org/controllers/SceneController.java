@@ -1,11 +1,9 @@
 package org.controllers;
 
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import org.User;
 
-import java.sql.Connection;
 
 public class SceneController {
 
@@ -18,11 +16,13 @@ public class SceneController {
     public static final String BURGERS = "../fxmls/burgersScene.fxml";
     public static final String SANDWICHES = "../fxmls/sandwichesScene.fxml";
     public static final String DRINKS = "../fxmls/drinks.fxml";
-    public static final String FRIESNSIDES = "../fxmls/friesAndSides.fxml";
+    public static final String FRIESNSIDES = "../fxmls/sidesScene.fxml";
     public static final String BEER = "../fxmls/beer.fxml";
-    public static final String SALADS = "../fxmls/salads.fxml";
+    public static final String SALADS = "../fxmls/saladScene.fxml";
     public static final String CONFIRM = "../fxmls/confirmPage.fxml";
     public static final String CHECKOUT = "../fxmls/checkout.fxml";
+    public static final String FRIES = "../fxmls/fries.fxml";
+    public static final String SOUP = "../fxmls/soup.fxml";
 
 
 
@@ -61,6 +61,16 @@ public class SceneController {
                 break;
             case CONFIRM:
                 controller = new ConfirmController(stage, fxml);
+                break;
+            case SALADS:
+                controller = new SaladController(stage, fxml, user);
+                break;
+            case FRIESNSIDES:
+                controller = new SidesController(stage, fxml, user);
+                break;
+            case CHECKOUT:
+                controller = new CheckoutController(stage, fxml, user);
+                break;
         }
         stage.setScene(new Scene(controller));
     }

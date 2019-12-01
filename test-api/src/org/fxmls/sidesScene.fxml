@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="213.0" fitWidth="198.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@../utils/Clyde's Gastropub.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#9e9624" layoutX="249.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SIDES">
+         <font>
+            <Font name="American Typewriter Bold" size="28.0" />
+         </font>
+      </Text>
+      <Text fill="#a18822" layoutX="208.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fries">
+         <font>
+            <Font name="Apple Chancery" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="241.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Small $2.5" wrappingWidth="271.98779296875" />
+      <Text fill="#a18822" layoutX="212.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Small Onion Rings">
+         <font>
+            <Font name="Apple Chancery" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="370.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$3.5" />
+      <Text fill="#a18822" layoutX="214.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Side Salad">
+         <font>
+            <Font name="Apple Chancery" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="225.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tomato, Cucumber and Red onion with Ranch, Balsomic Vinigrete or oil and viniger dressing" wrappingWidth="281.45263671875" />
+      <Button layoutX="72.0" layoutY="16.0" mnemonicParsing="false" onAction="#mainMenu" text="Main Menu" style="-fx-background-color: #9e9426;" textFill="#fcfafa">
+         <font>
+            <Font name="American Typewriter" size="13.0" />
+         </font></Button>
+      <Button layoutX="491.0" layoutY="16.0" mnemonicParsing="false" onAction="#myCart" prefHeight="17.0" prefWidth="95.0" style="-fx-background-color: #9e9426;" text="My Cart" textFill="#fcfafa">
+         <font>
+            <Font name="American Typewriter" size="13.0" />
+         </font></Button>
+      <Button layoutX="488.0" layoutY="112.0" mnemonicParsing="false" text="Add To Cart" style="-fx-background-color: #9e9426;" textFill="#fcfafa" onAction="#addFries"/>
+      <Button fx:id="onionRings" layoutX="488.0" layoutY="199.0" mnemonicParsing="false" text="Add To Cart" style="-fx-background-color: #9e9426;" textFill="#fcfafa" onAction="#addToCart"/>
+      <Button fx:id="sideSalad" layoutX="488.0" layoutY="271.0" mnemonicParsing="false" text="Add To Cart" style="-fx-background-color: #9e9426;" textFill="#fcfafa" onAction="#addToCart"/>
+      <Button layoutX="488.0" layoutY="367.0" mnemonicParsing="false" text="Add To Cart" style="-fx-background-color: #9e9426;" textFill="#fcfafa" onAction="#addSoup"/>
+      <ImageView fitHeight="161.0" fitWidth="160.0" layoutX="11.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../utils/fries.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="310.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$3.5" />
+      <Text fill="#a18822" layoutX="214.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Soup">
+         <font>
+            <Font name="Apple Chancery" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="236.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tomato Basil" wrappingWidth="281.45263671875" />
+      <Text fill="WHITE" layoutX="241.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Large $4.5" />
+      <Text fill="WHITE" layoutX="258.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cup $3.5" />
+      <Text fill="WHITE" layoutX="258.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bowl $5" />
+      <Text fill="WHITE" layoutX="253.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gluten Free" wrappingWidth="271.98779296875" />
+   </children>
+</fx:root>

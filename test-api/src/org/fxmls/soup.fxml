@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root style="-fx-background-color: black;" prefHeight="253.0" prefWidth="443.0" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <RadioButton fx:id="cup" layoutX="169.0" layoutY="100.0" mnemonicParsing="false" text="Cup" textFill="#fcfafa"/>
+        <RadioButton fx:id="bowl" layoutX="169.0" layoutY="142.0" mnemonicParsing="false" text="Bowl" textFill="#fcfafa"/>
+        <Button layoutX="347.0" layoutY="215.0" mnemonicParsing="false" text="Add To Cart" style="-fx-background-color: #9e9426;" textFill="#fcfafa" onAction="#addToCart"/>
+    </children>
+</fx:root>

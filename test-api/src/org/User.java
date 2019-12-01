@@ -9,6 +9,7 @@ public class User {
     private Map<String, String> cartWithPrice;
     private Map<String, Integer> cartWithQuantity;
     private String username;
+    private String password;
     private String firstName;
     private String lastName;
     private String email;
@@ -18,6 +19,7 @@ public class User {
 
     public User(String username) {
         this.username = username;
+        this.password = db.getPassword(username);
         this.firstName = db.getFirstName(username);
         this.lastName = db.getLastName(username);
         this.email = db.getEmail(username);
@@ -48,6 +50,8 @@ public class User {
     public Map<String, Integer> getCartWithQuantity() {
         return cartWithQuantity;
     }
+
+    public String getPassword() { return password; }
 
     public String getFirstName() { return firstName; }
 

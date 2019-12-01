@@ -3,6 +3,7 @@ package org.controllers;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Scene;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
@@ -43,12 +44,16 @@ public class CartController extends AbstractController {
 
     @FXML
     private void checkout(ActionEvent event) {
-        SceneController.switchScenes(stage, SceneController.CHECKOUT, user);
+        if (!user.getCartWithPrice().isEmpty() || !user.getCartWithQuantity().isEmpty()) {
+            SceneController.switchScenes(stage, SceneController.CHECKOUT, user);
+        } else {
+            emptyCart();
+        }
     }
 
     private void populateField(ListView listView, TextField textField, User user) {
         Map<String, String> cart = user.getCartWithPrice();
-        double total = 0.0;
+        double total = 0.00;
 
         for (Map.Entry mapElement : cart.entrySet()) {
             String item = (String) mapElement.getKey();
@@ -63,6 +68,14 @@ public class CartController extends AbstractController {
         textField.clear();
         textField.setText("$ " + total);
 
+    }
+
+    private void emptyCart() {
+        Stage error = new Stage();
+        error.setTitle("Empty Cart");
+        ErrorController controller = new ErrorController("../fxmls/emptyCart.fxml");
+        error.setScene(new Scene(controller));
+        error.show();
     }
 
 }
