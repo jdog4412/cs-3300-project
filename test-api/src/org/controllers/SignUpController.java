@@ -8,6 +8,7 @@ import javafx.stage.Stage;
 import org.User;
 import org.utils.Database;
 import org.utils.Utils;
+import org.utils.WorkIndicatorDialog;
 
 public class SignUpController extends AbstractController {
 
@@ -24,21 +25,44 @@ public class SignUpController extends AbstractController {
 
     @FXML
     private void signup(ActionEvent event) {
-        if (passwordField.getText().equals(confirmPasswordField.getText())) {
-            db.setUser(usernameField.getText(), passwordField.getText(), firstNameField.getText(),
-                    lastNameField.getText(), emailField.getText(), " ", phoneNumberField.getText());
-            User user = new User(usernameField.getText());
-            SceneController.switchScenes(stage, "../fxmls/mainMenu.fxml", user);
+
+        WorkIndicatorDialog<Void, User> signUpDialog = new WorkIndicatorDialog<>(stage.getOwner(), "Creating new User...");
+
+        if (!areFieldsEmpty()) {
+
+                signUpDialog.addTaskEndNotification(user -> {
+                    if (user != null) {
+                        SceneController.switchScenes(stage, SceneController.MAIN_MENU, user);
+                    } else {
+                        passwordsDontMatch();
+                    }
+                });
+
+            signUpDialog.execute(null, (ignore1, ignore2) -> {
+                if (passwordField.getText().equals(confirmPasswordField.getText())) {
+                    db.setUser(usernameField.getText(), passwordField.getText(), firstNameField.getText(),
+                            lastNameField.getText(), emailField.getText(), " ", phoneNumberField.getText());
+                    return new User(usernameField.getText());
+                }
+                return null;
+            });
         } else {
-            passwordsDontMatch();
+            emptyFields();
         }
     }
 
     @FXML
     private void cancel(ActionEvent event) {
-        SceneController.switchScenes(stage, "../fxmls/login.fxml", null);
+        SceneController.switchScenes(stage, SceneController.LOGIN, null);
     }
 
+    private void emptyFields() {
+        Stage error = new Stage();
+        error.setTitle("Fields are empty");
+        ErrorController controller = new ErrorController("../fxmls/emptyFields.fxml");
+        error.setScene(new Scene(controller));
+        error.show();
+    }
 
     private void passwordsDontMatch() {
         Stage error = new Stage();
@@ -48,5 +72,10 @@ public class SignUpController extends AbstractController {
         error.show();
     }
 
+    private boolean areFieldsEmpty() {
+        return firstNameField.getText().isEmpty() || lastNameField.getText().isEmpty() ||
+                emailField.getText().isEmpty() || phoneNumberField.getText().isEmpty() || usernameField.getText().isEmpty() ||
+                passwordField.getText().isEmpty() || confirmPasswordField.getText().isEmpty();
+    }
 
 }

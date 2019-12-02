@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fill="#9e9624" layoutX="249.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CHECKOUT">
+         <font>
+            <Font name="American Typewriter Bold" size="28.0" />
+         </font>
+      </Text>
+      <Button layoutX="20.0" layoutY="17.0" mnemonicParsing="false" style="-fx-background-color: #9e9624;" text="My Account " textFill="WHITE" onAction="#myAccount">
+         <font>
+            <Font name="American Typewriter" size="13.0" />
+         </font></Button>
+      <Button layoutX="511.0" layoutY="17.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #9e9624;" text="Main Menu" textFill="WHITE" onAction="#mainMenu">
+         <font>
+            <Font name="American Typewriter" size="13.0" />
+         </font></Button>
+      <Text fill="WHITE" layoutX="430.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order Summary">
+         <font>
+            <Font name="American Typewriter" size="13.0" />
+         </font>
+      </Text>
+      <Button layoutX="444.0" layoutY="347.0" mnemonicParsing="false" style="-fx-background-color: #9e9624;" text="Comfirm" textFill="WHITE" onAction="#confirm">
+         <font>
+            <Font name="American Typewriter" size="13.0" />
+         </font>
+      </Button>
+      <TextField fx:id="textField" layoutX="449.0" layoutY="308.0" prefHeight="27.0" prefWidth="62.0" />
+      <Text fill="WHITE" layoutX="401.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total:">
+         <font>
+            <Font name="American Typewriter" size="13.0" />
+         </font>
+      </Text>
+      <TextField fx:id="firstName" layoutX="61.0" layoutY="105.0" prefHeight="27.0" prefWidth="200.0" promptText="First Name" />
+      <TextField fx:id="lastName" layoutX="61.0" layoutY="138.0" prefHeight="27.0" prefWidth="200.0" promptText="Last Name" />
+      <TextField fx:id="address" layoutX="61.0" layoutY="173.0" prefHeight="27.0" prefWidth="200.0" promptText="Email Address" />
+      <TextField fx:id="creditCard" layoutX="61.0" layoutY="206.0" prefHeight="27.0" prefWidth="200.0" promptText="Credit Card Number" />
+      <TextField fx:id="expire" layoutX="61.0" layoutY="242.0" prefHeight="27.0" prefWidth="200.0" promptText="Expiration date mm/yyyy" />
+      <TextField fx:id="cvc" layoutX="61.0" layoutY="279.0" prefHeight="27.0" prefWidth="200.0" promptText="Security Code" />
+      <CheckBox fx:id="saveCard" layoutX="56.0" layoutY="334.0" mnemonicParsing="false" text="Save My Card" textFill="WHITE" />
+      <ListView fx:id="listView" layoutX="375.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</fx:root>

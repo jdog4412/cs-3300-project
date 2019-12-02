@@ -18,7 +18,7 @@
       </ImageView>
       <ImageView fitHeight="199.0" fitWidth="189.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
          <image>
-            <Image url="@../utils/Clyde's%20Gastropub.jpg" />
+            <Image url="@../utils/Clyde's Gastropub.jpg" />
          </image>
       </ImageView>
       <Text fill="#9e9426" layoutX="184.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BURGERS" wrappingWidth="306.22900390625">
@@ -37,39 +37,39 @@
          </font>
       </Text>
       <Text fill="#fffafa" layoutX="225.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Angus beef patty, lettuce, tomato, red onion, and pickle on challah bun" wrappingWidth="266.22900390625" />
-      <Text fill="#fcfcfc" layoutX="529.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$7.50" wrappingWidth="33.966796875" />
+      <Text fill="#fcfcfc" layoutX="341.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$7.50" wrappingWidth="33.966796875" />
       <Text fill="#9a8415" layoutX="205.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A.B.C">
          <font>
             <Font name="Apple Chancery" size="18.0" />
          </font>
       </Text>
       <Text fill="WHITE" layoutX="221.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Angus beef patty, hickory bacon, cheddar cheese, lettuce , tomato, red onion, and pickle on challah bun." wrappingWidth="273.22900390625" />
-      <Text fill="#fffefe" layoutX="528.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$9.00" />
-      <Text fill="#9e9623" layoutX="204.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mushroom Avocado Swiss Burger" wrappingWidth="266.22900390625">
+      <Text fill="#fffefe" layoutX="260.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$9.00" />
+      <Text fill="#9e9623" layoutX="204.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mushroom Avocado Swiss" wrappingWidth="266.22900390625">
          <font>
             <Font name="Apple Chancery" size="18.0" />
          </font>
       </Text>
       <Text fill="WHITE" layoutX="221.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Angus beef patty, sauteed crimini mushrooms, avocado, lettuce, tomato, red onion and pickle." wrappingWidth="273.22900390625" />
-      <Text fill="WHITE" layoutX="528.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$9.00" />
+      <Text fill="WHITE" layoutX="430.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$9.00" />
       <Text fill="#9e9629" layoutX="204.0" layoutY="342.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Black Bean Burger (V)">
          <font>
             <Font name="Apple Chancery" size="18.0" />
          </font>
       </Text>
       <Text fill="#fcf7f7" layoutX="227.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="House-made patty, lettuce, tomato, red onion, pickle with tabasco aioli." wrappingWidth="273.22900390625" />
-      <Text fill="WHITE" layoutX="528.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$8.00" />
-      <Button layoutX="72.0" layoutY="16.0" mnemonicParsing="false" style="-fx-background-color: #9e9426;" text="My Account" textFill="WHITE">
+      <Text fill="WHITE" layoutX="390.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$8.00" />
+      <Button layoutX="72.0" layoutY="16.0" mnemonicParsing="false" onAction="#mainMenu" style="-fx-background-color: #9e9426;" text="Main Menu" textFill="#fcfafa">
          <font>
             <Font name="American Typewriter" size="13.0" />
          </font></Button>
-      <Button layoutX="491.0" layoutY="16.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="95.0" style="-fx-background-color: #9e9426;" text="My Cart" textFill="WHITE">
+      <Button layoutX="491.0" layoutY="16.0" mnemonicParsing="false" onAction="#myCart" prefHeight="17.0" prefWidth="95.0" style="-fx-background-color: #9e9426;" text="My Cart" textFill="#fcfafa">
          <font>
             <Font name="American Typewriter" size="13.0" />
          </font></Button>
-      <Button layoutX="497.0" layoutY="143.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="84.0" text="Add To Cart" />
-      <Button layoutX="497.0" layoutY="226.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="84.0" text="Add To Cart" />
-      <Button layoutX="497.0" layoutY="302.0" mnemonicParsing="false" text="Add To Cart" />
-      <Button layoutX="497.0" layoutY="371.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="84.0" text="Add To Cart" />
+      <Button fx:id="original" layoutX="497.0" layoutY="111.0" mnemonicParsing="false" onAction="#addToCart" prefHeight="27.0" prefWidth="84.0" style="-fx-background-color: #9e9426;" text="Add To Cart" textFill="#fcfafa" />
+      <Button fx:id="abc" layoutX="497.0" layoutY="190.0" mnemonicParsing="false" onAction="#addToCart" prefHeight="27.0" prefWidth="84.0" style="-fx-background-color: #9e9426;" text="Add To Cart" textFill="#fcfafa" />
+      <Button fx:id="mushavcswiss" layoutX="497.0" layoutY="273.0" mnemonicParsing="false" onAction="#addToCart" style="-fx-background-color: #9e9426;" text="Add To Cart" textFill="#fcfafa" />
+      <Button fx:id="blackbean" layoutX="497.0" layoutY="342.0" mnemonicParsing="false" onAction="#addToCart" prefHeight="27.0" prefWidth="84.0" style="-fx-background-color: #9e9426;" text="Add To Cart" textFill="#fcfafa" />
    </children>
 </fx:root>

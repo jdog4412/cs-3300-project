@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<fx:root prefHeight="400.0" prefWidth="600.0" styleClass="anchor" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@../utils/burger_picture.css" />
+    </stylesheets>
+    <children>
+        <Pane layoutX="15.0" layoutY="19.0" prefHeight="363.0" prefWidth="570.0" style="-fx-background-color: black;" styleClass="pane">
+            <children>
+                <Button layoutX="38.0" layoutY="323.0" mnemonicParsing="false" onAction="#logOut" text="Log out" textAlignment="CENTER" style="-fx-background-color: #9e9426;" textFill="#fcfafa">
+                    <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                            <stops>
+                                <Stop color="BLACK" />
+                                <Stop color="#543939" offset="1.0" />
+                            </stops>
+                        </RadialGradient>
+                    </textFill>
+                </Button>
+                <Text fill="WHITE" layoutX="100.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name :" wrappingWidth="192.22900390625">
+               <font>
+                  <Font name="American Typewriter" size="13.0" />
+               </font></Text>
+                <Text fill="WHITE" layoutX="100.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name :" wrappingWidth="175.22900390625">
+               <font>
+                  <Font size="13.0" />
+               </font></Text>
+                <Text fill="WHITE" layoutX="100.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email Address : " wrappingWidth="161.22900390625">
+               <font>
+                  <Font name="American Typewriter" size="13.0" />
+               </font></Text>
+                <Text fill="WHITE" layoutX="100.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username :" wrappingWidth="167.22900390625">
+               <font>
+                  <Font name="American Typewriter" size="13.0" />
+               </font></Text>
+                <Text fill="WHITE" layoutX="100.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number :" wrappingWidth="167.22900390625">
+               <font>
+                  <Font name="American Typewriter" size="13.0" />
+               </font></Text>
+                <Button layoutX="127.0" layoutY="323.0" mnemonicParsing="false" onAction="#myCart" text="My Cart" textAlignment="CENTER" style="-fx-background-color: #9e9426;" textFill="#fcfafa">
+                    <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                            <stops>
+                                <Stop color="BLACK" />
+                                <Stop color="#543939" offset="1.0" />
+                            </stops>
+                        </RadialGradient>
+                    </textFill>
+                </Button>
+                <Label layoutX="14.0" layoutY="7.0" prefHeight="58.0" prefWidth="547.0" text="CLYDE'S GASTROPUB MY ACCOUNT" textAlignment="CENTER">
+                    <font>
+                        <Font name="American Typewriter Bold" size="28.0" />
+                    </font>
+                </Label>
+            <Text fx:id="firstName" fill="WHITE" layoutX="285.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NULL" />
+            <Text fx:id="lastName" fill="WHITE" layoutX="285.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NULL" />
+            <Text fx:id="email" fill="WHITE" layoutX="287.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NULL" />
+            <Text fx:id="username" fill="WHITE" layoutX="288.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NULL" />
+            <Text fx:id="phoneNumber" fill="WHITE" layoutX="286.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NULL" />
+            <Button layoutX="503.0" layoutY="323.0" mnemonicParsing="false" onAction="#edit" text="Edit" textAlignment="CENTER" style="-fx-background-color: #9e9426;" textFill="#fcfafa">
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#543939" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Button>
+            <Button layoutX="477.0" layoutY="22.0" mnemonicParsing="false" onAction="#mainMenu" style="-fx-background-color: #9e9426;" textFill="#fcfafa" text="Main Menu" >
+               <font>
+                  <Font name="American Typewriter" size="13.0" />
+               </font>
+            </Button>
+            </children>
+        </Pane>
+
+    </children>
+</fx:root>

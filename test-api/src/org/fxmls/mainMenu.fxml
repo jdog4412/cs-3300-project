@@ -18,50 +18,50 @@
     </stylesheets>
 
     <children>
-        <Button layoutX="44.0" layoutY="28.0" mnemonicParsing="false" text="My Account" onAction="#goToAccount">
+        <Button layoutX="44.0" layoutY="28.0" mnemonicParsing="false" text="My Account" onAction="#goToAccount" style="-fx-background-color: #9e9426;" textFill="#fcfafa">
             <font>
                 <Font name="American Typewriter" size="13.0"/>
             </font>
         </Button>
         <Button layoutX="482.0" layoutY="28.0" mnemonicParsing="false" text="My Cart" textAlignment="RIGHT"
-                onAction="#goToCart">
+                onAction="#goToCart" style="-fx-background-color: #9e9426;" textFill="#fcfafa">
             <font>
                 <Font name="American Typewriter" size="13.0"/>
             </font>
         </Button>
-        <Button layoutX="71.0" layoutY="109.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="132.0"
-                style="-fx-background-color: black;" text="Burgers" onAction="#goToBurgers" textFill="#f8f5f5">
+        <Button layoutX="63.0" layoutY="109.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="132.0"
+                style="-fx-background-color: black; -fx-effect: dropshadow(three-pass-box, black, 10, 0.95, 0, 0); -fx-background-radius: 1" text="Burgers" onAction="#goToBurgers" textFill="#f8f5f5">
             <font>
                 <Font name="American Typewriter" size="13.0"/>
             </font>
         </Button>
         <Button layoutX="385.0" layoutY="242.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="132.0"
-                style="-fx-background-color: black;" text="Fries &amp; Sides" onAction="#goToFriesAndSides"
-                textFill="#f8f6f6">
+                style="-fx-background-color: black; -fx-effect: dropshadow(three-pass-box, black, 10, 0.95, 0, 0); -fx-background-radius: 1" text="Fries &amp; Sides" onAction="#goToFriesAndSides"
+                textFill="#f8f5f5">
             <font>
-                <Font name="American Typewriter" size="14.0"/>
+                <Font name="American Typewriter" size="13.0"/>
             </font>
         </Button>
-        <Button layoutX="234.0" layoutY="242.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="132.0"
-                style="-fx-background-color: black;" text="Beer" onAction="#goToAlcohol" textFill="#fcf8f8">
+        <Button layoutX="224.0" layoutY="242.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="132.0"
+                style="-fx-background-color: black; -fx-effect: dropshadow(three-pass-box, black, 10, 0.95, 0, 0); -fx-background-radius: 1" text="Beer" onAction="#goToBeer" textFill="#f8f5f5">
             <font>
                 <Font name="American Typewriter" size="13.0"/>
             </font>
         </Button>
         <Button layoutX="224.0" layoutY="109.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="132.0"
-                style="-fx-background-color: black;" text="Sandwiches" onAction="#goToSandwiches" textFill="#f5f5f5">
+                style="-fx-background-color: black; -fx-effect: dropshadow(three-pass-box, black, 10, 0.95, 0, 0); -fx-background-radius: 1" text="Sandwiches" onAction="#goToSandwiches" textFill="#f8f5f5">
             <font>
                 <Font name="American Typewriter" size="13.0"/>
             </font>
         </Button>
         <Button layoutX="385.0" layoutY="109.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="132.0"
-                style="-fx-background-color: black;" text="Salads" onAction="#goToSalads" textFill="#fcf9f9">
+                style="-fx-background-color: black; -fx-effect: dropshadow(three-pass-box, black, 10, 0.95, 0, 0); -fx-background-radius: 1" text="Salads" onAction="#goToSalads" textFill="#f8f5f5">
             <font>
-                <Font name="American Typewriter" size="14.0"/>
+                <Font name="American Typewriter" size="13.0"/>
             </font>
         </Button>
-        <Button layoutX="71.0" layoutY="242.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="132.0"
-                style="-fx-background-color: black;" text="Drinks" onAction="#goToDrinks" textFill="#f8f6f6">
+        <Button layoutX="63.0" layoutY="242.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="132.0"
+                style="-fx-background-color: black; -fx-effect: dropshadow(three-pass-box, black, 10, 0.95, 0, 0); -fx-background-radius: 1" text="Drinks" onAction="#goToDrinks" textFill="#f8f6f6">
             <font>
                 <Font name="American Typewriter" size="13.0"/>
             </font>

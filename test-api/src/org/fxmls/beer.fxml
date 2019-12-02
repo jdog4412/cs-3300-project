@@ -10,17 +10,17 @@
 
 <fx:root prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black; -fx-border-color: white;" styleClass="anchor" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button layoutX="484.0" layoutY="28.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #9e9624;" text="My Cart" textFill="WHITE">
+      <Button layoutX="484.0" layoutY="28.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #9e9426;" textFill="#fcfafa" text="My Cart" onAction="#myCart">
          <font>
             <Font name="American Typewriter" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="40.0" layoutY="28.0" mnemonicParsing="false" style="-fx-background-color: #9e9624;" text="My Account " textFill="WHITE">
+      <Button layoutX="40.0" layoutY="28.0" mnemonicParsing="false" style="-fx-background-color: #9e9426;" textFill="#fcfafa" text="Main Menu" onAction="#mainMenu">
          <font>
             <Font name="American Typewriter" size="13.0" />
          </font>
       </Button>
-      <Text fill="#9e9624" layoutX="244.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Libations">
+      <Text fill="#9e9624" layoutX="244.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LIBATIONS">
          <font>
             <Font name="American Typewriter Bold" size="28.0" />
          </font>
@@ -85,7 +85,7 @@
             <Font name="Apple Chancery" size="18.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="234.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$7.0" wrappingWidth="32.092041015625">
+      <Text fill="WHITE" layoutX="250.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$7.0" wrappingWidth="32.092041015625">
          <font>
             <Font size="12.0" />
          </font>
@@ -105,27 +105,27 @@
             <Font name="Apple Chancery" size="18.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="380.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$3.5" wrappingWidth="32.092041015625">
+      <Text fill="WHITE" layoutX="390.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$3.5" wrappingWidth="32.092041015625">
          <font>
             <Font size="12.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="419.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$4.5" wrappingWidth="32.092041015625">
+      <Text fill="WHITE" layoutX="430.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$4.5" wrappingWidth="32.092041015625">
          <font>
             <Font size="12.0" />
          </font>
       </Text>
-      <Text fill="#dac778" layoutX="331.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blue Moon   ">
+      <Text fill="#dac778" layoutX="331.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blue Moon">
          <font>
             <Font name="Apple Chancery" size="18.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="333.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blue Moon (Belgian Wheat)" wrappingWidth="154.092041015625">
+      <Text fill="WHITE" layoutX="333.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blue Moon" wrappingWidth="154.092041015625">
          <font>
             <Font size="12.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="426.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$5.5" wrappingWidth="32.092041015625">
+      <Text fill="WHITE" layoutX="426.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$5.5" wrappingWidth="32.092041015625">
          <font>
             <Font size="12.0" />
          </font>
@@ -140,52 +140,52 @@
             <Font size="12.0" />
          </font>
       </Text>
-      <Button layoutX="182.0" layoutY="127.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="60.0" text="Add To Cart">
+      <Button fx:id="beehive" layoutX="182.0" layoutY="127.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="60.0" text="Add To Cart" onAction="#addToCart" style="-fx-background-color: #9e9426;" textFill="#fcfafa">
          <font>
             <Font size="9.0" />
          </font>
       </Button>
-      <Button layoutX="182.0" layoutY="151.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="60.0" text="Add To Cart">
+      <Button fx:id="laughingLab" layoutX="182.0" layoutY="151.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="60.0" text="Add To Cart" onAction="#addToCart" style="-fx-background-color: #9e9426;" textFill="#fcfafa">
          <font>
             <Font size="9.0" />
          </font>
       </Button>
-      <Button layoutX="182.0" layoutY="216.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="60.0" text="Add To Cart">
+      <Button fx:id="titan" layoutX="182.0" layoutY="216.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="60.0" text="Add To Cart" onAction="#addToCart" style="-fx-background-color: #9e9426;" textFill="#fcfafa">
          <font>
             <Font size="9.0" />
          </font>
       </Button>
-      <Button layoutX="182.0" layoutY="241.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="60.0" text="Add To Cart">
+      <Button fx:id="colette" layoutX="182.0" layoutY="241.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="60.0" text="Add To Cart" onAction="#addToCart" style="-fx-background-color: #9e9426;" textFill="#fcfafa">
          <font>
             <Font size="9.0" />
          </font>
       </Button>
-      <Button layoutX="182.0" layoutY="269.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="60.0" text="Add To Cart">
+      <Button fx:id="claymore" layoutX="182.0" layoutY="269.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="60.0" text="Add To Cart" onAction="#addToCart" style="-fx-background-color: #9e9426;" textFill="#fcfafa">
          <font>
             <Font size="9.0" />
          </font>
       </Button>
-      <Button layoutX="182.0" layoutY="359.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="60.0" text="Add To Cart">
+      <Button fx:id="glider" layoutX="182.0" layoutY="359.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="60.0" text="Add To Cart" onAction="#addToCart" style="-fx-background-color: #9e9426;" textFill="#fcfafa">
          <font>
             <Font size="9.0" />
          </font>
       </Button>
-      <Button layoutX="182.0" layoutY="334.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="60.0" text="Add To Cart">
+      <Button fx:id="cherry" layoutX="182.0" layoutY="334.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="60.0" text="Add To Cart" onAction="#addToCart" style="-fx-background-color: #9e9426;" textFill="#fcfafa">
          <font>
             <Font size="9.0" />
          </font>
       </Button>
-      <Button layoutX="477.0" layoutY="127.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="60.0" text="Add To Cart">
+      <Button fx:id="coors" layoutX="477.0" layoutY="127.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="60.0" text="Add To Cart" onAction="#addToCart" style="-fx-background-color: #9e9426;" textFill="#fcfafa">
          <font>
             <Font size="9.0" />
          </font>
       </Button>
-      <Button layoutX="477.0" layoutY="187.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="60.0" text="Add To Cart">
+      <Button fx:id="blueMoon" layoutX="477.0" layoutY="187.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="60.0" text="Add To Cart" onAction="#addToCart" style="-fx-background-color: #9e9426;" textFill="#fcfafa">
          <font>
             <Font size="9.0" />
          </font>
       </Button>
-      <Button layoutX="477.0" layoutY="241.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="60.0" text="Add To Cart">
+      <Button fx:id="milkStout" layoutX="477.0" layoutY="241.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="60.0" text="Add To Cart" onAction="#addToCart" style="-fx-background-color: #9e9426;" textFill="#fcfafa">
          <font>
             <Font size="9.0" />
          </font>

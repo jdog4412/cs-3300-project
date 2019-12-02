@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="213.0" fitWidth="198.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@../utils/Clyde's Gastropub.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#9e9624" layoutX="249.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SALADS">
+         <font>
+            <Font name="American Typewriter Bold" size="28.0" />
+         </font>
+      </Text>
+      <Text fill="#a18822" layoutX="212.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="House Salad">
+         <font>
+            <Font name="Apple Chancery" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="241.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Organic field greens, tomato, cucumber, avocado, red onion and monterey jack cheese served with ranch or baslsamic cinaigreete. (Gluten Free)" wrappingWidth="271.98779296875" />
+      <Text fill="WHITE" layoutX="323.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$6.5" />
+      <Text fill="#a18822" layoutX="212.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Caesar Salad">
+         <font>
+            <Font name="Apple Chancery" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="241.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chopped leaf lettuce, parmesan cheese and house-made croutons served with Caeser dressing" wrappingWidth="281.45263671875" />
+      <Text fill="WHITE" layoutX="323.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$7.0" />
+      <Text fill="#a18822" layoutX="212.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ahi Salad">
+         <font>
+            <Font name="Apple Chancery" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="241.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seared ahi tuna (cooked to medium rare), carrots, cucumber, over spring mix. Served with ginger-sesame dressing." wrappingWidth="281.45263671875" />
+      <Button layoutX="72.0" layoutY="16.0" mnemonicParsing="false" onAction="#mainMenu" text="Main Menu" style="-fx-background-color: #9e9426;" textFill="#fcfafa">
+         <font>
+            <Font name="American Typewriter" size="13.0" />
+         </font></Button>
+      <Button layoutX="491.0" layoutY="16.0" mnemonicParsing="false" onAction="#myCart" prefHeight="17.0" prefWidth="95.0" style="-fx-background-color: #9e9426;" text="My Cart" textFill="#fcfafa">
+         <font>
+            <Font name="American Typewriter" size="13.0" />
+         </font></Button>
+      <Button fx:id="houseSalad" layoutX="519.0" layoutY="112.0" mnemonicParsing="false" text="Add To Cart" style="-fx-background-color: #9e9426;" textFill="#fcfafa" onAction="#addToCart"/>
+      <Button fx:id="caesarSalad" layoutX="519.0" layoutY="199.0" mnemonicParsing="false" text="Add To Cart" style="-fx-background-color: #9e9426;" textFill="#fcfafa" onAction="#addToCart"/>
+      <Button fx:id="ahiSalad" layoutX="519.0" layoutY="275.0" mnemonicParsing="false" text="Add To Cart" style="-fx-background-color: #9e9426;" textFill="#fcfafa" onAction="#addToCart"/>
+      <ImageView fitHeight="201.0" fitWidth="200.0" layoutX="11.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../utils/salad.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="295.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$8.5" />
+   </children>
+</fx:root>

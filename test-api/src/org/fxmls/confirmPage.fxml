@@ -16,7 +16,7 @@
                <children>
                   <ImageView fitHeight="192.0" fitWidth="206.0" layoutX="406.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" AnchorPane.leftAnchor="406.0" AnchorPane.topAnchor="-5.0">
                      <image>
-                        <Image url="@../../../../../Clyde's%20Gastropub.jpg" />
+                        <Image url="@../utils/Clyde's Gastropub.jpg" />
                      </image>
                   </ImageView>
                   <Text layoutX="39.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ORDER CONFIRMED " wrappingWidth="338.22900390625">
@@ -29,7 +29,7 @@
                         <Font size="18.0" />
                      </font>
                   </Text>
-                  <Text layoutX="46.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="#" wrappingWidth="152.0">
+                  <Text fx:id="orderNum" layoutX="46.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="#" wrappingWidth="152.0">
                      <font>
                         <Font size="18.0" />
                      </font>
@@ -42,6 +42,11 @@
                   <Text layoutX="42.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="We hereby confirmed that we have received your order. Your order will be ready for pick up  soon. You can check the order details in your email." wrappingWidth="514.22900390625">
                      <font>
                         <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="time" layoutX="42.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="15 Minutes">
+                     <font>
+                        <Font size="48.0" />
                      </font>
                   </Text>
                </children>
