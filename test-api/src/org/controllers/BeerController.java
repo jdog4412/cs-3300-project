@@ -203,7 +203,7 @@ public class BeerController extends AbstractController{
     private void notInStock() {
         Stage error = new Stage();
         error.setTitle("Item not in stock");
-        ErrorController controller = new ErrorController("../notInStock.fxml");
+        ErrorController controller = new ErrorController("/org/fxmls/notInStock.fxml");
         error.setScene(new Scene(controller));
         error.show();
     }

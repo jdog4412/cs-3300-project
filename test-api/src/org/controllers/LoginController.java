@@ -55,7 +55,7 @@ public class LoginController extends AbstractController {
 
     @FXML
     private void signup(ActionEvent event) {
-        SceneController.switchScenes(stage, "../fxmls/signUp.fxml", null);
+        SceneController.switchScenes(stage, "/org/fxmls/signUp.fxml", null);
     }
 
     private void invalidLogin() {
@@ -63,7 +63,7 @@ public class LoginController extends AbstractController {
         passwordField.clear();
         Stage error = new Stage();
         error.setTitle("Invalid Login");
-        ErrorController controller = new ErrorController("../fxmls/invalidLogin.fxml");
+        ErrorController controller = new ErrorController("/org/fxmls/invalidLogin.fxml");
         error.setScene(new Scene(controller));
         error.show();
     }

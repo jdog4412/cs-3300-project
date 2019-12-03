@@ -59,7 +59,7 @@ public class SignUpController extends AbstractController {
     private void emptyFields() {
         Stage error = new Stage();
         error.setTitle("Fields are empty");
-        ErrorController controller = new ErrorController("../fxmls/emptyFields.fxml");
+        ErrorController controller = new ErrorController("/org/fxmls/emptyFields.fxml");
         error.setScene(new Scene(controller));
         error.show();
     }
@@ -67,7 +67,7 @@ public class SignUpController extends AbstractController {
     private void passwordsDontMatch() {
         Stage error = new Stage();
         error.setTitle("Passwords do not match");
-        ErrorController controller = new ErrorController("../fxmls/passwordsDontMatch.fxml");
+        ErrorController controller = new ErrorController("/org/fxmls/passwordsDontMatch.fxml");
         error.setScene(new Scene(controller));
         error.show();
     }

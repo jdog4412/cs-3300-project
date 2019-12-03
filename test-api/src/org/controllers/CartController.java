@@ -80,7 +80,7 @@ public class CartController extends AbstractController {
     private void emptyCart() {
         Stage error = new Stage();
         error.setTitle("Empty Cart");
-        ErrorController controller = new ErrorController("../fxmls/emptyCart.fxml");
+        ErrorController controller = new ErrorController("/org/fxmls/emptyCart.fxml");
         error.setScene(new Scene(controller));
         error.show();
     }

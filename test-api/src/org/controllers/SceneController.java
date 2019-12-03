@@ -7,22 +7,22 @@ import org.User;
 
 public class SceneController {
 
-    public static final String MAIN_MENU = "../fxmls/mainMenu.fxml";
-    public static final String SIGN_UP = "../fxmls/signUp.fxml";
-    public static final String LOGIN = "../fxmls/login.fxml";
-    public static final String ACCOUNT = "../fxmls/myAccount.fxml";
-    public static final String ACCOUNT_EDIT = "../fxmls/myAccountEdit.fxml";
-    public static final String CART = "../fxmls/cart.fxml";
-    public static final String BURGERS = "../fxmls/burgersScene.fxml";
-    public static final String SANDWICHES = "../fxmls/sandwichesScene.fxml";
-    public static final String DRINKS = "../fxmls/drinks.fxml";
-    public static final String FRIESNSIDES = "../fxmls/sidesScene.fxml";
-    public static final String BEER = "../fxmls/beer.fxml";
-    public static final String SALADS = "../fxmls/saladScene.fxml";
-    public static final String CONFIRM = "../fxmls/confirmPage.fxml";
-    public static final String CHECKOUT = "../fxmls/checkout.fxml";
-    public static final String FRIES = "../fxmls/fries.fxml";
-    public static final String SOUP = "../fxmls/soup.fxml";
+    public static final String MAIN_MENU = "/org/fxmls/mainMenu.fxml";
+    public static final String SIGN_UP = "/org/fxmls/signUp.fxml";
+    public static final String LOGIN = "/org/fxmls/login.fxml";
+    public static final String ACCOUNT = "/org/fxmls/myAccount.fxml";
+    public static final String ACCOUNT_EDIT = "/org/fxmls/myAccountEdit.fxml";
+    public static final String CART = "/org/fxmls/cart.fxml";
+    public static final String BURGERS = "/org/fxmls/burgersScene.fxml";
+    public static final String SANDWICHES = "/org/fxmls/sandwichesScene.fxml";
+    public static final String DRINKS = "/org/fxmls/drinks.fxml";
+    public static final String FRIESNSIDES = "/org/fxmls/sidesScene.fxml";
+    public static final String BEER = "/org/fxmls/beer.fxml";
+    public static final String SALADS = "/org/fxmls/saladScene.fxml";
+    public static final String CONFIRM = "/org/fxmls/confirmPage.fxml";
+    public static final String CHECKOUT = "/org/fxmls/checkout.fxml";
+    public static final String FRIES = "/org/fxmls/fries.fxml";
+    public static final String SOUP = "/org/fxmls/soup.fxml";
 
 
 

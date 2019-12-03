@@ -14,7 +14,7 @@
          styleClass="anchor" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8"
          xmlns:fx="http://javafx.com/fxml/1">
     <stylesheets>
-        <URL value="@../utils/burger_picture.css"/>
+        <URL value="@/org/utils/burger_picture.css"/>
     </stylesheets>
 
     <children>

@@ -12,7 +12,7 @@
 <fx:root prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black; -fx-border-color: white;" styleClass="anchor" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
 
    <stylesheets>
-      <URL value="@../utils/burger_picture.css" />
+      <URL value="@/org/utils/burger_picture.css" />
    </stylesheets>
    <Pane layoutX="15.0" layoutY="19.0" prefHeight="363.0" prefWidth="570.0" style="-fx-background-color: black;" styleClass="pane">
    <children>

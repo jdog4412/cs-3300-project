@@ -12,7 +12,7 @@
    <children>
       <ImageView fitHeight="213.0" fitWidth="198.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
          <image>
-            <Image url="@../utils/Clyde's Gastropub.jpg" />
+            <Image url="@/org/utils/Clyde's Gastropub.jpg" />
          </image>
       </ImageView>
       <Text fill="#9e9624" layoutX="201.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SANDWICHES">
@@ -71,7 +71,7 @@
       <Button fx:id="grilledCheese" layoutX="519.0" layoutY="318.0" mnemonicParsing="false" text="Add To Cart" onAction="#addToCart" style="-fx-background-color: #9e9426;" textFill="#fcfafa"/>
       <ImageView fitHeight="161.0" fitWidth="160.0" layoutX="11.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../utils/sandwich-on-black-background-vector-21598261.jpg" />
+            <Image url="@/org/utils/sandwich-on-black-background-vector-21598261.jpg" />
          </image>
       </ImageView>
    </children>

@@ -70,7 +70,7 @@ public class MyAccountControllerEdit extends AbstractController {
     private void emptyFields() {
         Stage error = new Stage();
         error.setTitle("Fields are empty");
-        ErrorController controller = new ErrorController("../fxmls/emptyFields.fxml");
+        ErrorController controller = new ErrorController("/org/fxmls/emptyFields.fxml");
         error.setScene(new Scene(controller));
         error.show();
     }

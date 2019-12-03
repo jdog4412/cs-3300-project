@@ -16,7 +16,7 @@
                <children>
                   <ImageView fitHeight="192.0" fitWidth="206.0" layoutX="406.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" AnchorPane.leftAnchor="406.0" AnchorPane.topAnchor="-5.0">
                      <image>
-                        <Image url="@../utils/Clyde's Gastropub.jpg" />
+                        <Image url="@/org/utils/Clyde's Gastropub.jpg" />
                      </image>
                   </ImageView>
                   <Text layoutX="39.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ORDER CONFIRMED " wrappingWidth="338.22900390625">

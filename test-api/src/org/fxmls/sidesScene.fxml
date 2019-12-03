@@ -12,7 +12,7 @@
    <children>
       <ImageView fitHeight="213.0" fitWidth="198.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
          <image>
-            <Image url="@../utils/Clyde's Gastropub.jpg" />
+            <Image url="@/org/utils/Clyde's Gastropub.jpg" />
          </image>
       </ImageView>
       <Text fill="#9e9624" layoutX="249.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SIDES">
@@ -52,7 +52,7 @@
       <Button layoutX="488.0" layoutY="367.0" mnemonicParsing="false" text="Add To Cart" style="-fx-background-color: #9e9426;" textFill="#fcfafa" onAction="#addSoup"/>
       <ImageView fitHeight="161.0" fitWidth="160.0" layoutX="11.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../utils/fries.jpg" />
+            <Image url="@/org/utils/fries.jpg" />
          </image>
       </ImageView>
       <Text fill="WHITE" layoutX="310.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$3.5" />
