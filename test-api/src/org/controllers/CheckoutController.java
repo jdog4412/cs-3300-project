@@ -92,6 +92,9 @@ public class CheckoutController extends AbstractController{
         firstName.setText(user.getFirstName());
         lastName.setText(user.getLastName());
         address.setText(user.getEmail());
+        if (!user.getCard().equals("")) {
+            creditCard.setText(user.getCard());
+        }
     }
 
     private boolean areFieldsEmpty() {

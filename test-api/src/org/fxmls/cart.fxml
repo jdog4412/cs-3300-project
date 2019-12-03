@@ -42,6 +42,11 @@
             <Font name="American Typewriter" size="13.0" />
          </font>
       </Button>
+      <Button layoutX="166.0" layoutY="338.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="153.0" style="-fx-background-color: #9e9426;" textFill="#fcfafa" text="Clear Cart"  onAction="#clear">
+         <font>
+            <Font name="American Typewriter" size="13.0" />
+         </font>
+      </Button>
    </children>
    </Pane>
 </fx:root>
