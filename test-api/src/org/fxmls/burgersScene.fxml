@@ -13,12 +13,12 @@
    <children>
       <ImageView fitHeight="130.0" fitWidth="189.0" layoutX="8.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../utils/logo-burger.jpg" />
+            <Image url="@/org/utils/logo-burger.jpg" />
          </image>
       </ImageView>
       <ImageView fitHeight="199.0" fitWidth="189.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
          <image>
-            <Image url="@../utils/Clyde's Gastropub.jpg" />
+            <Image url="@/org/utils/Clyde's Gastropub.jpg" />
          </image>
       </ImageView>
       <Text fill="#9e9426" layoutX="184.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BURGERS" wrappingWidth="306.22900390625">

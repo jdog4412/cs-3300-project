@@ -115,7 +115,7 @@ public class BurgersController extends AbstractController {
     private void notInStock() {
         Stage error = new Stage();
         error.setTitle("Item not in stock");
-        ErrorController controller = new ErrorController("../fxmls/notInStock.fxml");
+        ErrorController controller = new ErrorController("/org/fxmls/fxmls/notInStock.fxml");
         error.setScene(new Scene(controller));
         error.show();
     }

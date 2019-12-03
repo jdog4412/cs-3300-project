@@ -1,5 +1,5 @@
 .anchor {
-    -fx-background-image:url('../utils/burger.png');
+    -fx-background-image:url('/org/utils/burger.png');
     -fx-background-repeat: stretch;
     -fx-background-size: 750 400;
     -fx-background-position: center center;
