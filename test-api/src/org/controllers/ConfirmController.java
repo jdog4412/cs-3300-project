@@ -24,9 +24,8 @@ public class ConfirmController extends AbstractController {
     private void generateNumberAndTime(Text orderNum, Text time) {
         Random rand = new Random();
         int randomNumber = rand.nextInt(999999999);
-        int randomTime = rand.nextInt((55 - 5) + 1) + 5;
         orderNum.setText("# " + randomNumber);
-        time.setText(randomTime + " Minutes");
+        time.setText("15 Minutes");
 
 
 
