@@ -51,6 +51,13 @@ public class CartController extends AbstractController {
         }
     }
 
+    @FXML
+    private void clear(ActionEvent event) {
+        user.getCartWithQuantity().clear();
+        user.getCartWithPrice().clear();
+        SceneController.switchScenes(stage, SceneController.CART, user);
+    }
+
     private void populateField(ListView listView, TextField textField, User user) {
         Map<String, String> cart = user.getCartWithPrice();
         double total = 0.00;
